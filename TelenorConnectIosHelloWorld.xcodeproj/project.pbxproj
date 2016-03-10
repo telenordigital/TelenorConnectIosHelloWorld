@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C6D57021C91B2FF001A564E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D57011C91B2FF001A564E /* AppDelegate.swift */; };
+		5C6D57041C91B2FF001A564E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D57031C91B2FF001A564E /* ViewController.swift */; };
+		5C6D57071C91B2FF001A564E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D57051C91B2FF001A564E /* Main.storyboard */; };
+		5C6D57091C91B2FF001A564E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D57081C91B2FF001A564E /* Assets.xcassets */; };
+		5C6D570C1C91B2FF001A564E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D570A1C91B2FF001A564E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C6D56FE1C91B2FF001A564E /* TelenorConnectIosHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelenorConnectIosHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6D57011C91B2FF001A564E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C6D57031C91B2FF001A564E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C6D57061C91B2FF001A564E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C6D57081C91B2FF001A564E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C6D570B1C91B2FF001A564E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C6D570D1C91B2FF001A564E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C6D56FB1C91B2FF001A564E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C6D56F51C91B2FF001A564E = {
+			isa = PBXGroup;
+			children = (
+				5C6D57001C91B2FF001A564E /* TelenorConnectIosHelloWorld */,
+				5C6D56FF1C91B2FF001A564E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C6D56FF1C91B2FF001A564E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C6D56FE1C91B2FF001A564E /* TelenorConnectIosHelloWorld.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C6D57001C91B2FF001A564E /* TelenorConnectIosHelloWorld */ = {
+			isa = PBXGroup;
+			children = (
+				5C6D57011C91B2FF001A564E /* AppDelegate.swift */,
+				5C6D57031C91B2FF001A564E /* ViewController.swift */,
+				5C6D57051C91B2FF001A564E /* Main.storyboard */,
+				5C6D57081C91B2FF001A564E /* Assets.xcassets */,
+				5C6D570A1C91B2FF001A564E /* LaunchScreen.storyboard */,
+				5C6D570D1C91B2FF001A564E /* Info.plist */,
+			);
+			path = TelenorConnectIosHelloWorld;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C6D56FD1C91B2FF001A564E /* TelenorConnectIosHelloWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C6D57101C91B2FF001A564E /* Build configuration list for PBXNativeTarget "TelenorConnectIosHelloWorld" */;
+			buildPhases = (
+				5C6D56FA1C91B2FF001A564E /* Sources */,
+				5C6D56FB1C91B2FF001A564E /* Frameworks */,
+				5C6D56FC1C91B2FF001A564E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelenorConnectIosHelloWorld;
+			productName = TelenorConnectIosHelloWorld;
+			productReference = 5C6D56FE1C91B2FF001A564E /* TelenorConnectIosHelloWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C6D56F61C91B2FF001A564E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Telenor Digital";
+				TargetAttributes = {
+					5C6D56FD1C91B2FF001A564E = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 5C6D56F91C91B2FF001A564E /* Build configuration list for PBXProject "TelenorConnectIosHelloWorld" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C6D56F51C91B2FF001A564E;
+			productRefGroup = 5C6D56FF1C91B2FF001A564E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C6D56FD1C91B2FF001A564E /* TelenorConnectIosHelloWorld */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C6D56FC1C91B2FF001A564E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6D570C1C91B2FF001A564E /* LaunchScreen.storyboard in Resources */,
+				5C6D57091C91B2FF001A564E /* Assets.xcassets in Resources */,
+				5C6D57071C91B2FF001A564E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C6D56FA1C91B2FF001A564E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6D57041C91B2FF001A564E /* ViewController.swift in Sources */,
+				5C6D57021C91B2FF001A564E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5C6D57051C91B2FF001A564E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C6D57061C91B2FF001A564E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C6D570A1C91B2FF001A564E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C6D570B1C91B2FF001A564E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C6D570E1C91B2FF001A564E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C6D570F1C91B2FF001A564E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C6D57111C91B2FF001A564E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TelenorConnectIosHelloWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.telenor.connect.TelenorConnectIosHelloWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5C6D57121C91B2FF001A564E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TelenorConnectIosHelloWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.telenor.connect.TelenorConnectIosHelloWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C6D56F91C91B2FF001A564E /* Build configuration list for PBXProject "TelenorConnectIosHelloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C6D570E1C91B2FF001A564E /* Debug */,
+				5C6D570F1C91B2FF001A564E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C6D57101C91B2FF001A564E /* Build configuration list for PBXNativeTarget "TelenorConnectIosHelloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C6D57111C91B2FF001A564E /* Debug */,
+				5C6D57121C91B2FF001A564E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C6D56F61C91B2FF001A564E /* Project object */;
+}
