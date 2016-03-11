@@ -1,0 +1,28 @@
+PODS:
+  - AeroGearHttp (0.5.1)
+  - AeroGearOAuth2 (0.5.0):
+    - AeroGearHttp
+
+DEPENDENCIES:
+  - AeroGearHttp (from `https://github.com/aerogear/aerogear-ios-http`)
+  - AeroGearOAuth2 (from `https://github.com/telenordigital/aerogear-ios-oauth2`)
+
+EXTERNAL SOURCES:
+  AeroGearHttp:
+    :git: https://github.com/aerogear/aerogear-ios-http
+  AeroGearOAuth2:
+    :git: https://github.com/telenordigital/aerogear-ios-oauth2
+
+CHECKOUT OPTIONS:
+  AeroGearHttp:
+    :commit: 20e954caa168ed8605ae05322fbfaf038fd79366
+    :git: https://github.com/aerogear/aerogear-ios-http
+  AeroGearOAuth2:
+    :commit: fddfc3779ace7a2b853abefefce8298fa60a455f
+    :git: https://github.com/telenordigital/aerogear-ios-oauth2
+
+SPEC CHECKSUMS:
+  AeroGearHttp: f3e362a7f9e15abcd914d5c3df68999880b22f18
+  AeroGearOAuth2: 7fb2859d07f88b6f7d684b0dfda6081cc79b7a56
+
+COCOAPODS: 0.39.0

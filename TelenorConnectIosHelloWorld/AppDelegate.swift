@@ -8,6 +8,8 @@
 
 import UIKit
 
+import AeroGearOAuth2
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,7 +17,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let config = TelenorConnectConfig(clientId: "telenordigital-connectexample-android",
+            useStaging: true,
+            scopes: ["profile", "openid", "email"],
+            accountId: "telenor-connect-ios-hello-world")
+
+        let oauth2Module = AccountManager.getAccountByConfig(config) ?? AccountManager.addAccount(config, moduleClass: TelenorConnectOAuth2Module.self)
+        
+        if (oauth2Module.isAuthorized()) {
+            let controller: SignedInViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SignedInViewController") as! SignedInViewController
+            controller.oauth2Module = oauth2Module
+            self.window?.rootViewController = controller
+        } else {
+            let controller: SignInViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SignInViewController") as! SignInViewController
+            self.window?.rootViewController = controller
+        }
+        
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -41,6 +63,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        let notification = NSNotification(name: AGAppLaunchedWithURLNotification, object:nil, userInfo:[UIApplicationLaunchOptionsURLKey:url])
+        NSNotificationCenter.defaultCenter().postNotification(notification)
+        return true
+    }
+    
 }
 
