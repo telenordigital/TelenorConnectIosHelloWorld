@@ -61,4 +61,3 @@ fastlane/report.xml
 fastlane/screenshots
 
 *.swp
-*.xcworkspace

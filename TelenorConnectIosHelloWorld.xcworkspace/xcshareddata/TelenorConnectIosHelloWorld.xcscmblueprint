@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7B8E9154342FC2291D5B47B1E0FD95030549A044",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0C8AF9E7E5AFF561C6C4CF85A7C8ACC3A853551C" : 0,
+    "7B8E9154342FC2291D5B47B1E0FD95030549A044" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7E5ED00F-8DFF-411B-8D1B-E829C42D2E3D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0C8AF9E7E5AFF561C6C4CF85A7C8ACC3A853551C" : "td-aerogear-ios-oauth2\/",
+    "7B8E9154342FC2291D5B47B1E0FD95030549A044" : "TelenorConnectIosHelloWorld\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TelenorConnectIosHelloWorld",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TelenorConnectIosHelloWorld.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:telenordigital\/aerogear-ios-oauth2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0C8AF9E7E5AFF561C6C4CF85A7C8ACC3A853551C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/telenordigital\/TelenorConnectIosHelloWorld.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B8E9154342FC2291D5B47B1E0FD95030549A044"
+    }
+  ]
+}
