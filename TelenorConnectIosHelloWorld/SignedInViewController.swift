@@ -20,6 +20,12 @@ class SignedInViewController: UIViewController {
         super.viewDidLoad()
         print("oauth2Module?.isAuthorized()=\(oauth2Module?.isAuthorized())")
         
+        do {
+            try print("oauth2Module.getIdTokenPayload()=\(oauth2Module?.getIdTokenPayload())")
+        } catch {
+            print("Failed to getIdTokenPayload: \(error)")
+        }
+        
         if let infoText = infoText {
             signedInInfo.text = infoText
         } else {

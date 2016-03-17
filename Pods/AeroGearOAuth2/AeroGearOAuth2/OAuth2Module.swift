@@ -18,6 +18,7 @@
 import Foundation
 import UIKit
 import AeroGearHttp
+import JWT
 
 /**
 Notification constants emitted during oauth authorization flow.
@@ -146,6 +147,10 @@ public class OAuth2Module: AuthzModule {
 
             http.request(.POST, path: config.refreshTokenEndpoint!, parameters: paramDict, completionHandler: { (response, error) in
                 if (error != nil) {
+                    if error?.code == 400 {
+                        self.oauth2Session.clearTokens()
+                    }
+                    
                     completionHandler(nil, error)
                     return
                 }
@@ -155,7 +160,7 @@ public class OAuth2Module: AuthzModule {
                     let expiration = unwrappedResponse["expires_in"] as! NSNumber
                     let exp: String = expiration.stringValue
                     
-                    self.oauth2Session.saveAccessToken(accessToken, refreshToken: unwrappedRefreshToken, accessTokenExpiration: exp, refreshTokenExpiration: nil)
+                    self.oauth2Session.saveAccessToken(accessToken, refreshToken: unwrappedRefreshToken, accessTokenExpiration: exp, refreshTokenExpiration: nil, idToken: nil)
 
                     completionHandler(unwrappedResponse["access_token"], nil);
                 }
@@ -185,13 +190,18 @@ public class OAuth2Module: AuthzModule {
             if let unwrappedResponse = responseObject as? [String: AnyObject] {
                 let accessToken: String = unwrappedResponse["access_token"] as! String
                 let refreshToken: String? = unwrappedResponse["refresh_token"] as? String
+                let idToken: String? = unwrappedResponse["id_token"] as? String
                 let expiration = unwrappedResponse["expires_in"] as? NSNumber
                 let exp: String? = expiration?.stringValue
                 // expiration for refresh token is used in Keycloak
                 let expirationRefresh = unwrappedResponse["refresh_expires_in"] as? NSNumber
                 let expRefresh = expirationRefresh?.stringValue
                 
-                self.oauth2Session.saveAccessToken(accessToken, refreshToken: refreshToken, accessTokenExpiration: exp, refreshTokenExpiration: expRefresh)
+                self.oauth2Session.saveAccessToken(accessToken,
+                    refreshToken: refreshToken,
+                    accessTokenExpiration: exp,
+                    refreshTokenExpiration: expRefresh,
+                    idToken: idToken)
                 completionHandler(accessToken, nil)
             }
         })
@@ -341,6 +351,28 @@ public class OAuth2Module: AuthzModule {
         }
 
         return parameters;
+    }
+    
+    public func getIdTokenPayload() throws -> Payload? {
+        guard let signedJwt = oauth2Session.idToken else {
+            return nil
+        }
+
+        let token = try JWT.decode(signedJwt, algorithm: .None, verify: false, audience: config.clientId, issuer: config.baseURL)
+        
+        if let failure = validateIdToken(token, expectedIssuer: config.baseURL, expectedAudience: config.clientId) {
+            throw failure
+        }
+        
+        return token
+    }
+    
+    func validate(token: [String:AnyObject]) throws {
+        
+    }
+    
+    public func getIdTokenEncoded() -> String? {
+        return oauth2Session.idToken
     }
 
     deinit {

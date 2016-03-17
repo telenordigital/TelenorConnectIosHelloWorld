@@ -7,128 +7,242 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B0124F73A70B60B718B7C31AADC91B8 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E32F3C0C6FE4241282EEE21E8D073 /* AccountManager.swift */; };
-		1C5CA0323B22B50689F6252B44A93D80 /* JsonResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F3D330F528B7644DBC4D127E91CB7 /* JsonResponseSerializer.swift */; };
-		207C62541B48F4AC6DEBE1810ACCB769 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76404675107AA5A72C640ECED33E7E82 /* DateUtils.swift */; };
-		27B9305978AB08232BD1BAD3E5CF8FBB /* AuthzModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130FCFA38B55AB37589EE7BB7768ED42 /* AuthzModule.swift */; };
-		27FA756BF29523DAC37E61FEE933D5FD /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
-		34BFAC18A269D413F0C10F40601D4095 /* AeroGearHttp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 799B25162233CB73592C743D80E58A9B /* AeroGearHttp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		367395589D27BDA4CA3BF2CC4B6CEA0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2564914086759516E53234B042EF8 /* Foundation.framework */; };
-		3BC624128D51D23DFFFAFE3A15305DC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2564914086759516E53234B042EF8 /* Foundation.framework */; };
-		47AC07606E6A0A38EB7A7694180C3551 /* FacebookOAuth2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AC53479C815946C63E28AA89A1285A /* FacebookOAuth2Module.swift */; };
-		5223ABAA99F6C17C23C2AAE769C081F7 /* TrustedPersistantOAuth2Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDDE239035CF013C2A74A654B150B9 /* TrustedPersistantOAuth2Session.swift */; };
-		64A0C97265E9506BF4173AEE0B54EDDB /* OAuth2WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783681E8F8714407018A5F50B014E4D /* OAuth2WebViewController.swift */; };
-		653C036B94D8543FB8FB1FDD38C7FFAA /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18612915B30030D8A232E808F2FBC609 /* RequestSerializer.swift */; };
-		68E3641C019F4BDFC8D935A84E0942DF /* OAuth2Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AC2982E1FC9C4F31F8FC59BD1C64C /* OAuth2Session.swift */; };
-		70ADA9157408B84E1E89E227DD928776 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BFD63C3E404C8AF4F842062B896214 /* Config.swift */; };
-		734CCE9C2716E4B365F1EA02A206652E /* OAuth2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CED859FA4D088E3066C3C298346941 /* OAuth2Module.swift */; };
-		947CC4F8C5CFA5B00200B10E272296E5 /* AeroGearOAuth2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E4035359AAB573729C8E95A49F3CEDB /* AeroGearOAuth2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AC87B88781726024D947FE5B3505041 /* TelenorConnectOAuth2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C44DED4EECD5E72C9555C28D252FB1 /* TelenorConnectOAuth2Module.swift */; };
-		BAF4FD69C4FE6323B1FC7B7B24032673 /* JsonRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A40A8E0E0BF74662C74B3B02436479 /* JsonRequestSerializer.swift */; };
-		BC50BDEFCF94D4234C5F0F604DB21495 /* OpenIDClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB19D1716FC3F8CA21A5552FBF0E7F8 /* OpenIDClaim.swift */; };
-		BF4FE2CA55E25E91654D4090767397C0 /* StringResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F61ED7DFA27DA891B4FBFC0F80BBCB /* StringResponseSerializer.swift */; };
-		C3EE5FD470BF4FD80D834166E6C5E8EA /* HttpRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6198D82BA5A3220BE2C950CE7DE594 /* HttpRequestSerializer.swift */; };
-		C87667E38F6CD68AE666C260C7F29A5D /* AeroGearHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 628D7DBCC2ECEAA6EE020752A85EE186 /* AeroGearHttp.framework */; };
-		CFBFD1949A464FA701704CB507D5074D /* MultiPartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F140830BF87B353DEE137E74070635 /* MultiPartData.swift */; };
-		DBC758DD1E8133BE9BF8B0642EA1DECB /* AeroGearOAuth2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 770449896EEE86138BFDC793C6F87A8F /* AeroGearOAuth2-dummy.m */; };
-		DE5034546E5B57739FEE4FB860D9E73F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1558C8A2F45D6CB66D003BD1209BACE1 /* Security.framework */; };
-		E5A2BCC4A086495AF6EAF6B546B0B53A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC2564914086759516E53234B042EF8 /* Foundation.framework */; };
-		E71BC34E57EC2F9963107DE4224316E6 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7783DA43E66A3CD931B178E31771E1C /* ResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D97B6EFB27A962E135B2D2913D3AC5C /* ResponseSerializer.swift */; };
-		E94393E2BBDAA8E8BBFDF20A0E9F8512 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECDAFBFA8B404CE90575136DF005626 /* Http.swift */; };
-		ED4B859D28626B3B1E74BF97A7D3F4B3 /* AeroGearHttp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B32B4D9E7062EEA99F080BFE0E8F748 /* AeroGearHttp-dummy.m */; };
-		F2378283C6BE3F184F2B2D0B2EC96D7A /* KeycloakOAuth2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1AA4A8EA8D3E4D2AEA977EA2FD54D /* KeycloakOAuth2Module.swift */; };
-		F983A211639EA43476CEB54995E32C35 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB29D0F487439F99E8C0B14AAC196F9 /* Utils.swift */; };
-		FCD95727C36176FD790AE61EA1D5C48A /* UntrustedMemoryOAuth2Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85454415011D9765F3C6766F62A504 /* UntrustedMemoryOAuth2Session.swift */; };
+		03BF0278CC64E72EF49F8EA0ACC0EF38 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EDBF37AE85A12BB0ECB60599ABE774 /* Authenticator.swift */; };
+		0723957F2E7CE3BCCA4BE5408382D052 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B6C713BFB93C99BAA303A6E5DF46C62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEB0707A1F50555B7DEDDBE8FB36215 /* Foundation.framework */; };
+		10358639DC56CFEAAB1281FE0C13547A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982C0458205A39252E92BD418BCFE661 /* StringExtension.swift */; };
+		12AFEE867BA0A3408B25AB4CCE6B871A /* BitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D83785027FAA76DF5B5742A8B384C2 /* BitExtension.swift */; };
+		1664A4F02F94DDF9DEC11CD2F9E8192B /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131EF0EF3A30D22F1128F832A30322E /* IntExtension.swift */; };
+		175AD96649E2201DDAF993D9E8CFCB3C /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B9CCFFFFBB34D6EE594886D3601B12 /* CryptoSwift.framework */; };
+		18FD56AF9B8A953367795E24AF6F50D7 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA526E68752C160840FA5CAA28D1A0E /* DateUtils.swift */; };
+		1BF3E9F66ECF1EB08163F2E3B54017C7 /* NSDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1E7744BED76ABA076540C642DB92C /* NSDataExtension.swift */; };
+		1C5CA0323B22B50689F6252B44A93D80 /* JsonResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56306407DEBCDB11C39477441A516C4C /* JsonResponseSerializer.swift */; };
+		1FF7FFC30B38D41393509351FFBDFD94 /* OAuth2Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B13310D7DE1FBE68D6367B23BEC883 /* OAuth2Session.swift */; };
+		211C392761392E8824DD2BE0395CEA1E /* Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4456D2B9567FEE91E91945923840F9A /* Decode.swift */; };
+		245B83DE51D53ADC772A2E5CC6B2F69F /* Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C50CDF1827A0A24E7BC2A437F27D902 /* Poly1305.swift */; };
+		254E9EB3401CED2F0BA7CE05A1F3050E /* FacebookOAuth2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5226EC2B25C7419634C4FDA61B0C24 /* FacebookOAuth2Module.swift */; };
+		26D592F22FD0B048A25790A349CF7636 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96EBA40BD231436DE045C18158DC918 /* Utils.swift */; };
+		27402A3C5B14329D234572CACCC37F3C /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B09E66F96ECD640D8AED1876BE6CF /* MD5.swift */; };
+		27B9305978AB08232BD1BAD3E5CF8FBB /* AuthzModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6E2A910884B498832B3AF77396C5C /* AuthzModule.swift */; };
+		2E29591CFD9DE96E7195F852526CA125 /* JWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9058C80A375D670360509F5D60EBBB7 /* JWT.framework */; };
+		34943FF1EEB809BB8C42A134279B0141 /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EE37E1F9EF2AB203D0674667613793 /* SHA2.swift */; };
+		34BFAC18A269D413F0C10F40601D4095 /* AeroGearHttp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF954A6D918FA4E4EE1DAE63D2C87251 /* AeroGearHttp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		367395589D27BDA4CA3BF2CC4B6CEA0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEB0707A1F50555B7DEDDBE8FB36215 /* Foundation.framework */; };
+		43D61F9DB08638047BDE5D31E2FE83A6 /* TelenorConnectOAuth2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15677EB8682A66590F64016386262472 /* TelenorConnectOAuth2Module.swift */; };
+		44F3AA02B917A2FF5F57B4A4723E4F8C /* TrustedPersistantOAuth2Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EF8129CA2AE6A683584B93E019B4CE /* TrustedPersistantOAuth2Session.swift */; };
+		4BAECF33D4FAC2BC0EC09FE755F21A67 /* Claims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DA02C01DF8B44D401C217F908567 /* Claims.swift */; };
+		4BC5ABA8C910C6885A778A3879C06887 /* UInt32Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC44B8C8A7CB58A37AE1AC7B42B3650 /* UInt32Extension.swift */; };
+		56D4B0B6CC513ACDB35C3115468B70B4 /* NSDataSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC628EFBB1C4CF4FE34910656751CB /* NSDataSequence.swift */; };
+		57605CB02A4623494CDA5B4C7DD00846 /* JSONWebToken-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D69C09E18412DD67D4DBA343F33B217F /* JSONWebToken-dummy.m */; };
+		5F23392076382F5919DFC5D01C9ED40A /* OpenIDClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0619E6FE3F688FA22B487375DB8971F7 /* OpenIDClaim.swift */; };
+		64855C8F21F8E9DBA9D8828C27ECD93F /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAA85F76F73CB6F8D22D509C5D7A67 /* HMAC.swift */; };
+		653C036B94D8543FB8FB1FDD38C7FFAA /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6857E01A11315D54EEF511FA8C6B2CE9 /* RequestSerializer.swift */; };
+		654BC7E5D77B6E3FDE40E132F00138C8 /* CRC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE6FED79D407AAC7225B180CB0949B /* CRC.swift */; };
+		67D75157CAF964A1AF080B32A881F0A4 /* OAuth2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F7259195757C38969C87886BE1F1CE /* OAuth2Module.swift */; };
+		6D71C45A317205834AD8F0E7D1D923BC /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C14B1C474AED2F18E9D6B19E0543EE /* AccountManager.swift */; };
+		7026EE15A1AF2E11304FC985088C6F60 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8D650E006EC0FB797307EE02484A38 /* AES.swift */; };
+		7AF3B632B944D4A9F571B8EE4FD1B5A4 /* JSONWebToken-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D2ED81A7B26FF5B942078C73BBA3161 /* JSONWebToken-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BBD0CBAFBBB10C81105B53FF7734871 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
+		7EF5CF1659E95F015AAC396E12E18F3F /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E3A696C8666A99C28C64BABF5029F /* Padding.swift */; };
+		8A2545ACE12BBB1BF60930E143B8A5BF /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C6FC2C1E2C8FA29C15D34341BAD510 /* ChaCha20.swift */; };
+		959C60E797AB7D6E44115D36AD158947 /* UInt16Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F456EF64E53B275A3072F3F9150E55 /* UInt16Extension.swift */; };
+		99402ED916A30DE58D3AE77924FA86EF /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E45C7E934DBB80FBDEAD83AF3E6170 /* SHA1.swift */; };
+		9C4A6CE8DEAB0082C662112C24244367 /* KeycloakOAuth2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8084DDDE9B4BB4CD52E5CD3DC0F795F /* KeycloakOAuth2Module.swift */; };
+		9DFC000840AA9CBE0DF56ABEACCE894B /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA16193B1B7126C170AC9BB4DAEDF66 /* ArrayExtension.swift */; };
+		A023E24CBA077B33508A688902C17047 /* PKCS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DDB7F0F9C7447F4546AE3745DE3010 /* PKCS5.swift */; };
+		A23F96157F1BF662CD6A56A047B04594 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8B7A75D627E6C047CA4027293ADFA5 /* Operators.swift */; };
+		A2C6D08A7F16E83CB12920A2AAD08784 /* AeroGearOAuth2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2637299E09334252A256E83303ABB8A5 /* AeroGearOAuth2-dummy.m */; };
+		A59190F7B003764317523DBDEDB02D25 /* AeroGearOAuth2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9317010EC17462286770F61D1476696 /* AeroGearOAuth2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA6BE9BABAE744146A7A76CCE198F9F0 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35307727B81B818CC319890E1BE374E5 /* Base64.swift */; };
+		AF234D514AC220FA7279E022163E09FB /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D924DE7536C895C478ED9F2A36693FE /* Generics.swift */; };
+		B02527801351FEC06AFCDF0562F20852 /* IdTokenValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3214435929940B76A7D04E2C534176F /* IdTokenValidator.swift */; };
+		B24F65EE4CA4E685FD7516EFA28052BC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57ACCCE8805ED92360A682DD135FA346 /* Security.framework */; };
+		B7FA3BBC50720241AEE5D4249D684911 /* CryptoSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE04B6861047A77E09325F363B962190 /* CryptoSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAF4FD69C4FE6323B1FC7B7B24032673 /* JsonRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DB7E236001C255AFEA06F78BF6601 /* JsonRequestSerializer.swift */; };
+		BB64408E44933789261E0BF4664543A8 /* UInt64Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E44EC41811F1DD4BAFA702A21BF683 /* UInt64Extension.swift */; };
+		BF4FE2CA55E25E91654D4090767397C0 /* StringResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64B784664D670C82385B3B53B34936 /* StringResponseSerializer.swift */; };
+		C15726C991AF2F71BD7BFFE32149DC51 /* OAuth2WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6448E2B4E8922C96D99467498FE61A4B /* OAuth2WebViewController.swift */; };
+		C3EE5FD470BF4FD80D834166E6C5E8EA /* HttpRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61CFD7E35FCD5B7FC8849BC7AEB7661 /* HttpRequestSerializer.swift */; };
+		C43CE9D606B0BC2FA6E57B9F4AA34336 /* HashProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D3F583B24D9F9B1B6105DF1EAE5D6 /* HashProtocol.swift */; };
+		C94D752921BA9AB8DC90FC62003EB77D /* CipherBlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC2A0995F954FC51D9BBDCD3CD8FF8F /* CipherBlockMode.swift */; };
+		CB4829090FB4C153E3741121381D24CC /* UInt8Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A98998831C7F3BA165503E8009257 /* UInt8Extension.swift */; };
+		CFBFD1949A464FA701704CB507D5074D /* MultiPartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AD507F703D209A6E0E51DCA0A3CD9 /* MultiPartData.swift */; };
+		CFF2E9B6B89A0034927C13202E405470 /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E3734B76B803F8DD55A51AD8FFF77 /* PKCS7.swift */; };
+		D4528FACC1C2B250BC31ED3FDB3AB80A /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830B41E3E4FDA1BE74D305AF708B1026 /* Cipher.swift */; };
+		D521E48D79D9018795EB3F39A3D97658 /* CryptoSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F68AA027E26C39CEF730F84E4E9FC49 /* CryptoSwift-dummy.m */; };
+		DDB9F9E658A94F70997D037E94FAFAB6 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B3EE8A23C5F387D738D598A56BF3C /* JWT.swift */; };
+		E2F03004A82642E3644B4B90B90A4177 /* IntegerConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3279C33D85982E70C2B2259D14158 /* IntegerConvertible.swift */; };
+		E7783DA43E66A3CD931B178E31771E1C /* ResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81469E56C379547606DEABDE018AC0B3 /* ResponseSerializer.swift */; };
+		E94393E2BBDAA8E8BBFDF20A0E9F8512 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD85B9678F431920D319878E7ECC986 /* Http.swift */; };
+		EBAA65C516A757B3C4EB94F7E848F11F /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F97E18EA91B618DCEEA89B280F016 /* Hash.swift */; };
+		ED4B859D28626B3B1E74BF97A7D3F4B3 /* AeroGearHttp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 604184057EDC5F5024BA5B92ABCD3B8D /* AeroGearHttp-dummy.m */; };
+		EFFDC7A480535A509231E7C1664646F4 /* UntrustedMemoryOAuth2Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240789B6C7E282A5BDCD1B3E6128982E /* UntrustedMemoryOAuth2Session.swift */; };
+		F1AD95898998386E1FB5DB9770C77C33 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD32C718B4DA890859553A4DAE5DD1 /* Config.swift */; };
+		F7676A49E7C38832A18208604B572441 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEB0707A1F50555B7DEDDBE8FB36215 /* Foundation.framework */; };
+		F8ECDD959BC2720C8AF3A8081A364979 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEB0707A1F50555B7DEDDBE8FB36215 /* Foundation.framework */; };
+		F947CCFD1F233F2DE3F11C121746A847 /* AeroGearHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D727E491B899A4F533B20651BCE2C95 /* AeroGearHttp.framework */; };
+		F983A211639EA43476CEB54995E32C35 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D019C014F834C956B2E26A998FFD9B78 /* Utils.swift */; };
+		FF52E708D4B4F62F5CBCB39C8AAC0BF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEB0707A1F50555B7DEDDBE8FB36215 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		69129E59A97B43374528BB8A10F14A25 /* PBXContainerItemProxy */ = {
+		13AA1B5C17DE2C349C6156024AA9218A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B6184234CE5B97D6DADDB68315E67B58;
 			remoteInfo = AeroGearHttp;
 		};
-		D2A8AFB888F154A3C880E95D5C8C8CEC /* PBXContainerItemProxy */ = {
+		51C3155371C6465DE0CC6D153B5F57EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7B109FF6BA04B07331CEA7B3029AB0C5;
+			remoteGlobalIDString = FBB834C15B76A1AF7F365FE0458A3306;
 			remoteInfo = AeroGearOAuth2;
 		};
-		EAD1D3FBCBF315C10AB18185EFEA738C /* PBXContainerItemProxy */ = {
+		60327F82086F612F588EF5FC193D79FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1D5778557C763267589B83B495CBB8A;
+			remoteInfo = JSONWebToken;
+		};
+		9EE5EAC200622DF49F6A764BF9E13FB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58BE405B4E871CBBD26C3721B2B957F8;
+			remoteInfo = CryptoSwift;
+		};
+		A4254BBDFC2670FBEC5805BACBD45A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58BE405B4E871CBBD26C3721B2B957F8;
+			remoteInfo = CryptoSwift;
+		};
+		B7CC447F8426BEF4555FD59F6BC509E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B6184234CE5B97D6DADDB68315E67B58;
 			remoteInfo = AeroGearHttp;
+		};
+		F69C7FB577551AB2A4DC2850AF8AD509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1D5778557C763267589B83B495CBB8A;
+			remoteInfo = JSONWebToken;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02F140830BF87B353DEE137E74070635 /* MultiPartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiPartData.swift; path = AeroGearHttp/MultiPartData.swift; sourceTree = "<group>"; };
-		130FCFA38B55AB37589EE7BB7768ED42 /* AuthzModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthzModule.swift; path = AeroGearHttp/AuthzModule.swift; sourceTree = "<group>"; };
-		1558C8A2F45D6CB66D003BD1209BACE1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		178AB73669CB71BF1E85BE7D792B0C37 /* AeroGearHttp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AeroGearHttp-prefix.pch"; sourceTree = "<group>"; };
-		18612915B30030D8A232E808F2FBC609 /* RequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestSerializer.swift; path = AeroGearHttp/RequestSerializer.swift; sourceTree = "<group>"; };
-		1A6198D82BA5A3220BE2C950CE7DE594 /* HttpRequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpRequestSerializer.swift; path = AeroGearHttp/HttpRequestSerializer.swift; sourceTree = "<group>"; };
-		1D653EF212465F28D81555395D160C34 /* AeroGearHttp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AeroGearHttp.xcconfig; sourceTree = "<group>"; };
-		25C44DED4EECD5E72C9555C28D252FB1 /* TelenorConnectOAuth2Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TelenorConnectOAuth2Module.swift; path = AeroGearOAuth2/TelenorConnectOAuth2Module.swift; sourceTree = "<group>"; };
+		0131EF0EF3A30D22F1128F832A30322E /* IntExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntExtension.swift; path = CryptoSwift/IntExtension.swift; sourceTree = "<group>"; };
+		0619E6FE3F688FA22B487375DB8971F7 /* OpenIDClaim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenIDClaim.swift; path = AeroGearOAuth2/OpenIDClaim.swift; sourceTree = "<group>"; };
+		0C2B09E66F96ECD640D8AED1876BE6CF /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = CryptoSwift/MD5.swift; sourceTree = "<group>"; };
+		0D924DE7536C895C478ED9F2A36693FE /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = CryptoSwift/Generics.swift; sourceTree = "<group>"; };
+		0D9D062297601D86EF7716DA5349D071 /* JSONWebToken.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JSONWebToken.modulemap; sourceTree = "<group>"; };
+		0EC2A0995F954FC51D9BBDCD3CD8FF8F /* CipherBlockMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherBlockMode.swift; path = CryptoSwift/CipherBlockMode.swift; sourceTree = "<group>"; };
+		0FBD32C718B4DA890859553A4DAE5DD1 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = AeroGearOAuth2/Config.swift; sourceTree = "<group>"; };
+		15677EB8682A66590F64016386262472 /* TelenorConnectOAuth2Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TelenorConnectOAuth2Module.swift; path = AeroGearOAuth2/TelenorConnectOAuth2Module.swift; sourceTree = "<group>"; };
+		1D2ED81A7B26FF5B942078C73BBA3161 /* JSONWebToken-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONWebToken-umbrella.h"; sourceTree = "<group>"; };
+		21E3A54DF0043C0D3716B244A4AB0B96 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		240789B6C7E282A5BDCD1B3E6128982E /* UntrustedMemoryOAuth2Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UntrustedMemoryOAuth2Session.swift; path = AeroGearOAuth2/UntrustedMemoryOAuth2Session.swift; sourceTree = "<group>"; };
+		2637299E09334252A256E83303ABB8A5 /* AeroGearOAuth2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AeroGearOAuth2-dummy.m"; sourceTree = "<group>"; };
+		281D3F583B24D9F9B1B6105DF1EAE5D6 /* HashProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HashProtocol.swift; path = CryptoSwift/HashProtocol.swift; sourceTree = "<group>"; };
 		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		2CB29D0F487439F99E8C0B14AAC196F9 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = AeroGearHttp/Utils.swift; sourceTree = "<group>"; };
-		3CEDDE239035CF013C2A74A654B150B9 /* TrustedPersistantOAuth2Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrustedPersistantOAuth2Session.swift; path = AeroGearOAuth2/TrustedPersistantOAuth2Session.swift; sourceTree = "<group>"; };
-		3D97B6EFB27A962E135B2D2913D3AC5C /* ResponseSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerializer.swift; path = AeroGearHttp/ResponseSerializer.swift; sourceTree = "<group>"; };
-		44291702AA004181BB7DF79ADD8D6B04 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		461E32F3C0C6FE4241282EEE21E8D073 /* AccountManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccountManager.swift; path = AeroGearOAuth2/AccountManager.swift; sourceTree = "<group>"; };
-		49A1AA4A8EA8D3E4D2AEA977EA2FD54D /* KeycloakOAuth2Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeycloakOAuth2Module.swift; path = AeroGearOAuth2/KeycloakOAuth2Module.swift; sourceTree = "<group>"; };
-		51CED859FA4D088E3066C3C298346941 /* OAuth2Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Module.swift; path = AeroGearOAuth2/OAuth2Module.swift; sourceTree = "<group>"; };
-		53602A0FA2235DDA5CF1A42FA3B9C376 /* AeroGearHttp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AeroGearHttp.modulemap; sourceTree = "<group>"; };
-		5E4035359AAB573729C8E95A49F3CEDB /* AeroGearOAuth2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AeroGearOAuth2-umbrella.h"; sourceTree = "<group>"; };
-		628D7DBCC2ECEAA6EE020752A85EE186 /* AeroGearHttp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		65A40A8E0E0BF74662C74B3B02436479 /* JsonRequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonRequestSerializer.swift; path = AeroGearHttp/JsonRequestSerializer.swift; sourceTree = "<group>"; };
-		6B32B4D9E7062EEA99F080BFE0E8F748 /* AeroGearHttp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AeroGearHttp-dummy.m"; sourceTree = "<group>"; };
-		6D61BB41A290B34584F32948AC913837 /* AeroGearOAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearOAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		702AC2982E1FC9C4F31F8FC59BD1C64C /* OAuth2Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Session.swift; path = AeroGearOAuth2/OAuth2Session.swift; sourceTree = "<group>"; };
-		76404675107AA5A72C640ECED33E7E82 /* DateUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateUtils.swift; path = AeroGearOAuth2/DateUtils.swift; sourceTree = "<group>"; };
-		770449896EEE86138BFDC793C6F87A8F /* AeroGearOAuth2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AeroGearOAuth2-dummy.m"; sourceTree = "<group>"; };
-		799B25162233CB73592C743D80E58A9B /* AeroGearHttp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AeroGearHttp-umbrella.h"; sourceTree = "<group>"; };
+		33D83785027FAA76DF5B5742A8B384C2 /* BitExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BitExtension.swift; path = CryptoSwift/BitExtension.swift; sourceTree = "<group>"; };
+		33EDBF37AE85A12BB0ECB60599ABE774 /* Authenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authenticator.swift; path = CryptoSwift/Authenticator.swift; sourceTree = "<group>"; };
+		35307727B81B818CC319890E1BE374E5 /* Base64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base64.swift; path = JWT/Base64.swift; sourceTree = "<group>"; };
+		359B2292970CFD73465053C7525F4FDB /* CryptoSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-prefix.pch"; sourceTree = "<group>"; };
+		367782CF247E813F52AEFA322C76EBE5 /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
+		3CEB0707A1F50555B7DEDDBE8FB36215 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3E33B3F8F423A1CDB21D1A410C1C051D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E44EC41811F1DD4BAFA702A21BF683 /* UInt64Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt64Extension.swift; path = CryptoSwift/UInt64Extension.swift; sourceTree = "<group>"; };
+		4CC6E2A910884B498832B3AF77396C5C /* AuthzModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthzModule.swift; path = AeroGearHttp/AuthzModule.swift; sourceTree = "<group>"; };
+		50EF8129CA2AE6A683584B93E019B4CE /* TrustedPersistantOAuth2Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrustedPersistantOAuth2Session.swift; path = AeroGearOAuth2/TrustedPersistantOAuth2Session.swift; sourceTree = "<group>"; };
+		56306407DEBCDB11C39477441A516C4C /* JsonResponseSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonResponseSerializer.swift; path = AeroGearHttp/JsonResponseSerializer.swift; sourceTree = "<group>"; };
+		57ACCCE8805ED92360A682DD135FA346 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		586D1D0DB20BF03F07E3EACFA1A4661C /* AeroGearHttp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8F97E18EA91B618DCEEA89B280F016 /* Hash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hash.swift; path = CryptoSwift/Hash.swift; sourceTree = "<group>"; };
+		5E59D0E568335B3C883B50395BF80513 /* JSONWebToken-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONWebToken-prefix.pch"; sourceTree = "<group>"; };
+		5F97C1D85DD188EF8555F9F2BC72B8D2 /* AeroGearOAuth2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AeroGearOAuth2.modulemap; sourceTree = "<group>"; };
+		604184057EDC5F5024BA5B92ABCD3B8D /* AeroGearHttp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AeroGearHttp-dummy.m"; sourceTree = "<group>"; };
+		63BAA85F76F73CB6F8D22D509C5D7A67 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = CryptoSwift/HMAC.swift; sourceTree = "<group>"; };
+		6448E2B4E8922C96D99467498FE61A4B /* OAuth2WebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2WebViewController.swift; path = AeroGearOAuth2/OAuth2WebViewController.swift; sourceTree = "<group>"; };
+		647DD5822E0478988DD1F7E66C2B4691 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C14B1C474AED2F18E9D6B19E0543EE /* AccountManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccountManager.swift; path = AeroGearOAuth2/AccountManager.swift; sourceTree = "<group>"; };
+		6857E01A11315D54EEF511FA8C6B2CE9 /* RequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestSerializer.swift; path = AeroGearHttp/RequestSerializer.swift; sourceTree = "<group>"; };
+		6A2C4282970AEAE0B1BAE95C0B89249F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B8B7A75D627E6C047CA4027293ADFA5 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = CryptoSwift/Operators.swift; sourceTree = "<group>"; };
+		6D2E3A696C8666A99C28C64BABF5029F /* Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Padding.swift; path = CryptoSwift/Padding.swift; sourceTree = "<group>"; };
+		6E5A98998831C7F3BA165503E8009257 /* UInt8Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt8Extension.swift; path = CryptoSwift/UInt8Extension.swift; sourceTree = "<group>"; };
+		6F27DA02C01DF8B44D401C217F908567 /* Claims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Claims.swift; path = JWT/Claims.swift; sourceTree = "<group>"; };
+		74EE37E1F9EF2AB203D0674667613793 /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
+		75B3279C33D85982E70C2B2259D14158 /* IntegerConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerConvertible.swift; path = CryptoSwift/IntegerConvertible.swift; sourceTree = "<group>"; };
+		77E45C7E934DBB80FBDEAD83AF3E6170 /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
 		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		79BFD63C3E404C8AF4F842062B896214 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = AeroGearOAuth2/Config.swift; sourceTree = "<group>"; };
-		7C1302413B2BA57D0070A4618DF2404A /* AeroGearOAuth2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AeroGearOAuth2.modulemap; sourceTree = "<group>"; };
-		7DB19D1716FC3F8CA21A5552FBF0E7F8 /* OpenIDClaim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenIDClaim.swift; path = AeroGearOAuth2/OpenIDClaim.swift; sourceTree = "<group>"; };
-		7ECDAFBFA8B404CE90575136DF005626 /* Http.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Http.swift; path = AeroGearHttp/Http.swift; sourceTree = "<group>"; };
+		7C50CDF1827A0A24E7BC2A437F27D902 /* Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poly1305.swift; path = CryptoSwift/Poly1305.swift; sourceTree = "<group>"; };
+		81469E56C379547606DEABDE018AC0B3 /* ResponseSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerializer.swift; path = AeroGearHttp/ResponseSerializer.swift; sourceTree = "<group>"; };
+		830B41E3E4FDA1BE74D305AF708B1026 /* Cipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cipher.swift; path = CryptoSwift/Cipher.swift; sourceTree = "<group>"; };
+		84AE6FED79D407AAC7225B180CB0949B /* CRC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CRC.swift; path = CryptoSwift/CRC.swift; sourceTree = "<group>"; };
+		86F1E7744BED76ABA076540C642DB92C /* NSDataExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDataExtension.swift; path = CryptoSwift/NSDataExtension.swift; sourceTree = "<group>"; };
 		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		88AC53479C815946C63E28AA89A1285A /* FacebookOAuth2Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacebookOAuth2Module.swift; path = AeroGearOAuth2/FacebookOAuth2Module.swift; sourceTree = "<group>"; };
 		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		8ADC628EFBB1C4CF4FE34910656751CB /* NSDataSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDataSequence.swift; path = CryptoSwift/NSDataSequence.swift; sourceTree = "<group>"; };
+		8D727E491B899A4F533B20651BCE2C95 /* AeroGearHttp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0E3734B76B803F8DD55A51AD8FFF77 /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = CryptoSwift/PKCS7.swift; sourceTree = "<group>"; };
+		8F5226EC2B25C7419634C4FDA61B0C24 /* FacebookOAuth2Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacebookOAuth2Module.swift; path = AeroGearOAuth2/FacebookOAuth2Module.swift; sourceTree = "<group>"; };
+		94C6FC2C1E2C8FA29C15D34341BAD510 /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
 		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		AFC2564914086759516E53234B042EF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B58F3D330F528B7644DBC4D127E91CB7 /* JsonResponseSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonResponseSerializer.swift; path = AeroGearHttp/JsonResponseSerializer.swift; sourceTree = "<group>"; };
+		982C0458205A39252E92BD418BCFE661 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = CryptoSwift/StringExtension.swift; sourceTree = "<group>"; };
+		9A9A352CFD3D3C03A2E86FDDFB9EC008 /* JSONWebToken.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSONWebToken.xcconfig; sourceTree = "<group>"; };
+		9F68AA027E26C39CEF730F84E4E9FC49 /* CryptoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoSwift-dummy.m"; sourceTree = "<group>"; };
+		A0B9CCFFFFBB34D6EE594886D3601B12 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3958EAD3FCE2CBAF9A1396EF3C27805 /* AeroGearHttp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AeroGearHttp-prefix.pch"; sourceTree = "<group>"; };
+		A8084DDDE9B4BB4CD52E5CD3DC0F795F /* KeycloakOAuth2Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeycloakOAuth2Module.swift; path = AeroGearOAuth2/KeycloakOAuth2Module.swift; sourceTree = "<group>"; };
+		AA86EB5540F6E37CB5020E3AE3DB0C4A /* AeroGearHttp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AeroGearHttp.xcconfig; sourceTree = "<group>"; };
+		AEC7EE02C42AF80EE0043224293CA39F /* AeroGearOAuth2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AeroGearOAuth2.xcconfig; sourceTree = "<group>"; };
+		AF954A6D918FA4E4EE1DAE63D2C87251 /* AeroGearHttp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AeroGearHttp-umbrella.h"; sourceTree = "<group>"; };
+		B58A08A3007AC94829D3518766F1680F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B61CFD7E35FCD5B7FC8849BC7AEB7661 /* HttpRequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpRequestSerializer.swift; path = AeroGearHttp/HttpRequestSerializer.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C87C4ED0D331C69B29CF18FFDCA6ABBD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C03B8A4BCD06A24BE303308A08CB9E9A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7DDB7F0F9C7447F4546AE3745DE3010 /* PKCS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS5.swift; path = CryptoSwift/PKCS5.swift; sourceTree = "<group>"; };
+		C7F7259195757C38969C87886BE1F1CE /* OAuth2Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Module.swift; path = AeroGearOAuth2/OAuth2Module.swift; sourceTree = "<group>"; };
+		C9317010EC17462286770F61D1476696 /* AeroGearOAuth2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AeroGearOAuth2-umbrella.h"; sourceTree = "<group>"; };
+		C9A4EB524CB6FB2C49CCC012E730E837 /* CryptoSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.xcconfig; sourceTree = "<group>"; };
 		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		CC4B60624A10D8C05978688D9886F77A /* AeroGearOAuth2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AeroGearOAuth2-prefix.pch"; sourceTree = "<group>"; };
+		CCA16193B1B7126C170AC9BB4DAEDF66 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = CryptoSwift/ArrayExtension.swift; sourceTree = "<group>"; };
+		CF64B784664D670C82385B3B53B34936 /* StringResponseSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResponseSerializer.swift; path = AeroGearHttp/StringResponseSerializer.swift; sourceTree = "<group>"; };
+		D019C014F834C956B2E26A998FFD9B78 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = AeroGearHttp/Utils.swift; sourceTree = "<group>"; };
 		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D8F61ED7DFA27DA891B4FBFC0F80BBCB /* StringResponseSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResponseSerializer.swift; path = AeroGearHttp/StringResponseSerializer.swift; sourceTree = "<group>"; };
+		D3214435929940B76A7D04E2C534176F /* IdTokenValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdTokenValidator.swift; path = AeroGearOAuth2/IdTokenValidator.swift; sourceTree = "<group>"; };
+		D4456D2B9567FEE91E91945923840F9A /* Decode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decode.swift; path = JWT/Decode.swift; sourceTree = "<group>"; };
+		D69C09E18412DD67D4DBA343F33B217F /* JSONWebToken-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSONWebToken-dummy.m"; sourceTree = "<group>"; };
 		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		DA85454415011D9765F3C6766F62A504 /* UntrustedMemoryOAuth2Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UntrustedMemoryOAuth2Session.swift; path = AeroGearOAuth2/UntrustedMemoryOAuth2Session.swift; sourceTree = "<group>"; };
-		DDDA615F4BC6EA3053C704724B26CE57 /* AeroGearOAuth2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AeroGearOAuth2.xcconfig; sourceTree = "<group>"; };
+		DC114B1060DFB5EB14FEC234047FE76C /* AeroGearOAuth2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AeroGearOAuth2-prefix.pch"; sourceTree = "<group>"; };
+		DCD85B9678F431920D319878E7ECC986 /* Http.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Http.swift; path = AeroGearHttp/Http.swift; sourceTree = "<group>"; };
+		DE04B6861047A77E09325F363B962190 /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
+		E0F456EF64E53B275A3072F3F9150E55 /* UInt16Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt16Extension.swift; path = CryptoSwift/UInt16Extension.swift; sourceTree = "<group>"; };
+		E6B13310D7DE1FBE68D6367B23BEC883 /* OAuth2Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Session.swift; path = AeroGearOAuth2/OAuth2Session.swift; sourceTree = "<group>"; };
+		E77DB7E236001C255AFEA06F78BF6601 /* JsonRequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonRequestSerializer.swift; path = AeroGearHttp/JsonRequestSerializer.swift; sourceTree = "<group>"; };
 		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		E7F64843C5DC8998115E3D7875CE2EF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8173A2EA0A1C019C419073BD6D2ED22 /* AeroGearOAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearOAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F783681E8F8714407018A5F50B014E4D /* OAuth2WebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2WebViewController.swift; path = AeroGearOAuth2/OAuth2WebViewController.swift; sourceTree = "<group>"; };
-		FDB0E29CDC6771533099BFAF7FA9CB70 /* AeroGearHttp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2AD507F703D209A6E0E51DCA0A3CD9 /* MultiPartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiPartData.swift; path = AeroGearHttp/MultiPartData.swift; sourceTree = "<group>"; };
+		ED3558C214D105831B7DC494F17B63D6 /* JWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8D650E006EC0FB797307EE02484A38 /* AES.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.swift; path = CryptoSwift/AES.swift; sourceTree = "<group>"; };
+		F5EB1E8534A1240C7712159771B2D5AC /* AeroGearHttp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AeroGearHttp.modulemap; sourceTree = "<group>"; };
+		F61B3EE8A23C5F387D738D598A56BF3C /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = JWT/JWT.swift; sourceTree = "<group>"; };
+		F9058C80A375D670360509F5D60EBBB7 /* JWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96EBA40BD231436DE045C18158DC918 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = CryptoSwift/Utils.swift; sourceTree = "<group>"; };
+		FAA526E68752C160840FA5CAA28D1A0E /* DateUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateUtils.swift; path = AeroGearOAuth2/DateUtils.swift; sourceTree = "<group>"; };
+		FAC44B8C8A7CB58A37AE1AC7B42B3650 /* UInt32Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt32Extension.swift; path = CryptoSwift/UInt32Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0F4F31ECDA1AB60343F3E0EBD2C1B7A9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BC624128D51D23DFFFAFE3A15305DC9 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		433A59F508FC8EDC7E634862A2B36779 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,93 +251,127 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F6684ADFC0181116ADE293D0BFD6E39 /* Frameworks */ = {
+		5011AC356B9998CA5C6B095D42A675F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C87667E38F6CD68AE666C260C7F29A5D /* AeroGearHttp.framework in Frameworks */,
-				E5A2BCC4A086495AF6EAF6B546B0B53A /* Foundation.framework in Frameworks */,
-				DE5034546E5B57739FEE4FB860D9E73F /* Security.framework in Frameworks */,
+				F7676A49E7C38832A18208604B572441 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0F14EC3E8A4BB52AF8E3C560F2373C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175AD96649E2201DDAF993D9E8CFCB3C /* CryptoSwift.framework in Frameworks */,
+				FF52E708D4B4F62F5CBCB39C8AAC0BF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1F0AF4C0CE33BCD252DF399450FDC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F947CCFD1F233F2DE3F11C121746A847 /* AeroGearHttp.framework in Frameworks */,
+				F8ECDD959BC2720C8AF3A8081A364979 /* Foundation.framework in Frameworks */,
+				2E29591CFD9DE96E7195F852526CA125 /* JWT.framework in Frameworks */,
+				B24F65EE4CA4E685FD7516EFA28052BC /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F97E173CD74142922E42CD5E67C0C995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6C713BFB93C99BAA303A6E5DF46C62 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01123DB9AB38B7E142CCE4B0D3AF6004 /* Products */ = {
+		2451FF62ED83D6B0DDC08C4EA59635A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FDB0E29CDC6771533099BFAF7FA9CB70 /* AeroGearHttp.framework */,
-				6D61BB41A290B34584F32948AC913837 /* AeroGearOAuth2.framework */,
-				C87C4ED0D331C69B29CF18FFDCA6ABBD /* Pods.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1C25DA65C23871B2C9DDC847BC111DC7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FC1ACC33C1EA6E9C722F270084760172 /* AeroGearHttp */,
-				5D40FE2072D4D6FAA2A5BDCE399B06C9 /* AeroGearOAuth2 */,
+				AEB551A5A07CB221A8A73B391522D16E /* AeroGearHttp */,
+				2A58DF7F4B26C23711FF39F9F18E7A28 /* AeroGearOAuth2 */,
+				740F6694019107258CF50C6053981642 /* CryptoSwift */,
+				D89614A22F0A0A71D8ECDF82D44BE1F6 /* JSONWebToken */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		2CA82D992178E6A3B742D1325B3EC0C5 /* Support Files */ = {
+		2A58DF7F4B26C23711FF39F9F18E7A28 /* AeroGearOAuth2 */ = {
 			isa = PBXGroup;
 			children = (
-				53602A0FA2235DDA5CF1A42FA3B9C376 /* AeroGearHttp.modulemap */,
-				1D653EF212465F28D81555395D160C34 /* AeroGearHttp.xcconfig */,
-				6B32B4D9E7062EEA99F080BFE0E8F748 /* AeroGearHttp-dummy.m */,
-				178AB73669CB71BF1E85BE7D792B0C37 /* AeroGearHttp-prefix.pch */,
-				799B25162233CB73592C743D80E58A9B /* AeroGearHttp-umbrella.h */,
-				E7F64843C5DC8998115E3D7875CE2EF2 /* Info.plist */,
+				66C14B1C474AED2F18E9D6B19E0543EE /* AccountManager.swift */,
+				0FBD32C718B4DA890859553A4DAE5DD1 /* Config.swift */,
+				FAA526E68752C160840FA5CAA28D1A0E /* DateUtils.swift */,
+				8F5226EC2B25C7419634C4FDA61B0C24 /* FacebookOAuth2Module.swift */,
+				D3214435929940B76A7D04E2C534176F /* IdTokenValidator.swift */,
+				A8084DDDE9B4BB4CD52E5CD3DC0F795F /* KeycloakOAuth2Module.swift */,
+				C7F7259195757C38969C87886BE1F1CE /* OAuth2Module.swift */,
+				E6B13310D7DE1FBE68D6367B23BEC883 /* OAuth2Session.swift */,
+				6448E2B4E8922C96D99467498FE61A4B /* OAuth2WebViewController.swift */,
+				0619E6FE3F688FA22B487375DB8971F7 /* OpenIDClaim.swift */,
+				15677EB8682A66590F64016386262472 /* TelenorConnectOAuth2Module.swift */,
+				50EF8129CA2AE6A683584B93E019B4CE /* TrustedPersistantOAuth2Session.swift */,
+				240789B6C7E282A5BDCD1B3E6128982E /* UntrustedMemoryOAuth2Session.swift */,
+				90CB2130E51BDF59FB9F7CC679A828CD /* Support Files */,
+			);
+			path = AeroGearOAuth2;
+			sourceTree = "<group>";
+		};
+		73AE8D101D889BE64CDA2BE95593D104 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5EB1E8534A1240C7712159771B2D5AC /* AeroGearHttp.modulemap */,
+				AA86EB5540F6E37CB5020E3AE3DB0C4A /* AeroGearHttp.xcconfig */,
+				604184057EDC5F5024BA5B92ABCD3B8D /* AeroGearHttp-dummy.m */,
+				A3958EAD3FCE2CBAF9A1396EF3C27805 /* AeroGearHttp-prefix.pch */,
+				AF954A6D918FA4E4EE1DAE63D2C87251 /* AeroGearHttp-umbrella.h */,
+				B58A08A3007AC94829D3518766F1680F /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AeroGearHttp";
 			sourceTree = "<group>";
 		};
-		3067343295B91B00990F76E3B578D87E /* Support Files */ = {
+		740F6694019107258CF50C6053981642 /* CryptoSwift */ = {
 			isa = PBXGroup;
 			children = (
-				7C1302413B2BA57D0070A4618DF2404A /* AeroGearOAuth2.modulemap */,
-				DDDA615F4BC6EA3053C704724B26CE57 /* AeroGearOAuth2.xcconfig */,
-				770449896EEE86138BFDC793C6F87A8F /* AeroGearOAuth2-dummy.m */,
-				CC4B60624A10D8C05978688D9886F77A /* AeroGearOAuth2-prefix.pch */,
-				5E4035359AAB573729C8E95A49F3CEDB /* AeroGearOAuth2-umbrella.h */,
-				44291702AA004181BB7DF79ADD8D6B04 /* Info.plist */,
+				EE8D650E006EC0FB797307EE02484A38 /* AES.swift */,
+				CCA16193B1B7126C170AC9BB4DAEDF66 /* ArrayExtension.swift */,
+				33EDBF37AE85A12BB0ECB60599ABE774 /* Authenticator.swift */,
+				33D83785027FAA76DF5B5742A8B384C2 /* BitExtension.swift */,
+				94C6FC2C1E2C8FA29C15D34341BAD510 /* ChaCha20.swift */,
+				830B41E3E4FDA1BE74D305AF708B1026 /* Cipher.swift */,
+				0EC2A0995F954FC51D9BBDCD3CD8FF8F /* CipherBlockMode.swift */,
+				84AE6FED79D407AAC7225B180CB0949B /* CRC.swift */,
+				0D924DE7536C895C478ED9F2A36693FE /* Generics.swift */,
+				5D8F97E18EA91B618DCEEA89B280F016 /* Hash.swift */,
+				281D3F583B24D9F9B1B6105DF1EAE5D6 /* HashProtocol.swift */,
+				63BAA85F76F73CB6F8D22D509C5D7A67 /* HMAC.swift */,
+				75B3279C33D85982E70C2B2259D14158 /* IntegerConvertible.swift */,
+				0131EF0EF3A30D22F1128F832A30322E /* IntExtension.swift */,
+				0C2B09E66F96ECD640D8AED1876BE6CF /* MD5.swift */,
+				86F1E7744BED76ABA076540C642DB92C /* NSDataExtension.swift */,
+				8ADC628EFBB1C4CF4FE34910656751CB /* NSDataSequence.swift */,
+				6B8B7A75D627E6C047CA4027293ADFA5 /* Operators.swift */,
+				6D2E3A696C8666A99C28C64BABF5029F /* Padding.swift */,
+				C7DDB7F0F9C7447F4546AE3745DE3010 /* PKCS5.swift */,
+				8E0E3734B76B803F8DD55A51AD8FFF77 /* PKCS7.swift */,
+				7C50CDF1827A0A24E7BC2A437F27D902 /* Poly1305.swift */,
+				77E45C7E934DBB80FBDEAD83AF3E6170 /* SHA1.swift */,
+				74EE37E1F9EF2AB203D0674667613793 /* SHA2.swift */,
+				982C0458205A39252E92BD418BCFE661 /* StringExtension.swift */,
+				E0F456EF64E53B275A3072F3F9150E55 /* UInt16Extension.swift */,
+				FAC44B8C8A7CB58A37AE1AC7B42B3650 /* UInt32Extension.swift */,
+				43E44EC41811F1DD4BAFA702A21BF683 /* UInt64Extension.swift */,
+				6E5A98998831C7F3BA165503E8009257 /* UInt8Extension.swift */,
+				F96EBA40BD231436DE045C18158DC918 /* Utils.swift */,
+				83F7DBE5134EF5BC22745F202314C986 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/AeroGearOAuth2";
-			sourceTree = "<group>";
-		};
-		49681FC255F92C3A013A10F0B49C9F79 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				AFC2564914086759516E53234B042EF8 /* Foundation.framework */,
-				1558C8A2F45D6CB66D003BD1209BACE1 /* Security.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		5D40FE2072D4D6FAA2A5BDCE399B06C9 /* AeroGearOAuth2 */ = {
-			isa = PBXGroup;
-			children = (
-				461E32F3C0C6FE4241282EEE21E8D073 /* AccountManager.swift */,
-				79BFD63C3E404C8AF4F842062B896214 /* Config.swift */,
-				76404675107AA5A72C640ECED33E7E82 /* DateUtils.swift */,
-				88AC53479C815946C63E28AA89A1285A /* FacebookOAuth2Module.swift */,
-				49A1AA4A8EA8D3E4D2AEA977EA2FD54D /* KeycloakOAuth2Module.swift */,
-				51CED859FA4D088E3066C3C298346941 /* OAuth2Module.swift */,
-				702AC2982E1FC9C4F31F8FC59BD1C64C /* OAuth2Session.swift */,
-				F783681E8F8714407018A5F50B014E4D /* OAuth2WebViewController.swift */,
-				7DB19D1716FC3F8CA21A5552FBF0E7F8 /* OpenIDClaim.swift */,
-				25C44DED4EECD5E72C9555C28D252FB1 /* TelenorConnectOAuth2Module.swift */,
-				3CEDDE239035CF013C2A74A654B150B9 /* TrustedPersistantOAuth2Session.swift */,
-				DA85454415011D9765F3C6766F62A504 /* UntrustedMemoryOAuth2Session.swift */,
-				3067343295B91B00990F76E3B578D87E /* Support Files */,
-			);
-			path = AeroGearOAuth2;
+			path = CryptoSwift;
 			sourceTree = "<group>";
 		};
 		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
@@ -248,11 +396,68 @@
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BA568B2F54FC84F66B916B7F3C25F199 /* Frameworks */,
-				1C25DA65C23871B2C9DDC847BC111DC7 /* Pods */,
-				01123DB9AB38B7E142CCE4B0D3AF6004 /* Products */,
+				7EF1382E5B0A6AB64543AA0674A5A6D5 /* Frameworks */,
+				2451FF62ED83D6B0DDC08C4EA59635A3 /* Pods */,
+				D52180A826D4459C8AB1B5014AE8A11E /* Products */,
 				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7EF1382E5B0A6AB64543AA0674A5A6D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D727E491B899A4F533B20651BCE2C95 /* AeroGearHttp.framework */,
+				A0B9CCFFFFBB34D6EE594886D3601B12 /* CryptoSwift.framework */,
+				F9058C80A375D670360509F5D60EBBB7 /* JWT.framework */,
+				C383A8F967476E04E93DA3FCD7C37E57 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83F7DBE5134EF5BC22745F202314C986 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				367782CF247E813F52AEFA322C76EBE5 /* CryptoSwift.modulemap */,
+				C9A4EB524CB6FB2C49CCC012E730E837 /* CryptoSwift.xcconfig */,
+				9F68AA027E26C39CEF730F84E4E9FC49 /* CryptoSwift-dummy.m */,
+				359B2292970CFD73465053C7525F4FDB /* CryptoSwift-prefix.pch */,
+				DE04B6861047A77E09325F363B962190 /* CryptoSwift-umbrella.h */,
+				3E33B3F8F423A1CDB21D1A410C1C051D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CryptoSwift";
+			sourceTree = "<group>";
+		};
+		90CB2130E51BDF59FB9F7CC679A828CD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F97C1D85DD188EF8555F9F2BC72B8D2 /* AeroGearOAuth2.modulemap */,
+				AEC7EE02C42AF80EE0043224293CA39F /* AeroGearOAuth2.xcconfig */,
+				2637299E09334252A256E83303ABB8A5 /* AeroGearOAuth2-dummy.m */,
+				DC114B1060DFB5EB14FEC234047FE76C /* AeroGearOAuth2-prefix.pch */,
+				C9317010EC17462286770F61D1476696 /* AeroGearOAuth2-umbrella.h */,
+				C03B8A4BCD06A24BE303308A08CB9E9A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AeroGearOAuth2";
+			sourceTree = "<group>";
+		};
+		AEB551A5A07CB221A8A73B391522D16E /* AeroGearHttp */ = {
+			isa = PBXGroup;
+			children = (
+				4CC6E2A910884B498832B3AF77396C5C /* AuthzModule.swift */,
+				DCD85B9678F431920D319878E7ECC986 /* Http.swift */,
+				B61CFD7E35FCD5B7FC8849BC7AEB7661 /* HttpRequestSerializer.swift */,
+				E77DB7E236001C255AFEA06F78BF6601 /* JsonRequestSerializer.swift */,
+				56306407DEBCDB11C39477441A516C4C /* JsonResponseSerializer.swift */,
+				ED2AD507F703D209A6E0E51DCA0A3CD9 /* MultiPartData.swift */,
+				6857E01A11315D54EEF511FA8C6B2CE9 /* RequestSerializer.swift */,
+				81469E56C379547606DEABDE018AC0B3 /* ResponseSerializer.swift */,
+				CF64B784664D670C82385B3B53B34936 /* StringResponseSerializer.swift */,
+				D019C014F834C956B2E26A998FFD9B78 /* Utils.swift */,
+				73AE8D101D889BE64CDA2BE95593D104 /* Support Files */,
+			);
+			path = AeroGearHttp;
 			sourceTree = "<group>";
 		};
 		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
@@ -263,36 +468,80 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BA568B2F54FC84F66B916B7F3C25F199 /* Frameworks */ = {
+		C383A8F967476E04E93DA3FCD7C37E57 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				628D7DBCC2ECEAA6EE020752A85EE186 /* AeroGearHttp.framework */,
-				49681FC255F92C3A013A10F0B49C9F79 /* iOS */,
+				3CEB0707A1F50555B7DEDDBE8FB36215 /* Foundation.framework */,
+				57ACCCE8805ED92360A682DD135FA346 /* Security.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		FC1ACC33C1EA6E9C722F270084760172 /* AeroGearHttp */ = {
+		D20CAA481B793E767F39FDB1740AE0E1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				130FCFA38B55AB37589EE7BB7768ED42 /* AuthzModule.swift */,
-				7ECDAFBFA8B404CE90575136DF005626 /* Http.swift */,
-				1A6198D82BA5A3220BE2C950CE7DE594 /* HttpRequestSerializer.swift */,
-				65A40A8E0E0BF74662C74B3B02436479 /* JsonRequestSerializer.swift */,
-				B58F3D330F528B7644DBC4D127E91CB7 /* JsonResponseSerializer.swift */,
-				02F140830BF87B353DEE137E74070635 /* MultiPartData.swift */,
-				18612915B30030D8A232E808F2FBC609 /* RequestSerializer.swift */,
-				3D97B6EFB27A962E135B2D2913D3AC5C /* ResponseSerializer.swift */,
-				D8F61ED7DFA27DA891B4FBFC0F80BBCB /* StringResponseSerializer.swift */,
-				2CB29D0F487439F99E8C0B14AAC196F9 /* Utils.swift */,
-				2CA82D992178E6A3B742D1325B3EC0C5 /* Support Files */,
+				6A2C4282970AEAE0B1BAE95C0B89249F /* Info.plist */,
+				0D9D062297601D86EF7716DA5349D071 /* JSONWebToken.modulemap */,
+				9A9A352CFD3D3C03A2E86FDDFB9EC008 /* JSONWebToken.xcconfig */,
+				D69C09E18412DD67D4DBA343F33B217F /* JSONWebToken-dummy.m */,
+				5E59D0E568335B3C883B50395BF80513 /* JSONWebToken-prefix.pch */,
+				1D2ED81A7B26FF5B942078C73BBA3161 /* JSONWebToken-umbrella.h */,
 			);
-			path = AeroGearHttp;
+			name = "Support Files";
+			path = "../Target Support Files/JSONWebToken";
+			sourceTree = "<group>";
+		};
+		D52180A826D4459C8AB1B5014AE8A11E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				586D1D0DB20BF03F07E3EACFA1A4661C /* AeroGearHttp.framework */,
+				E8173A2EA0A1C019C419073BD6D2ED22 /* AeroGearOAuth2.framework */,
+				647DD5822E0478988DD1F7E66C2B4691 /* CryptoSwift.framework */,
+				ED3558C214D105831B7DC494F17B63D6 /* JWT.framework */,
+				21E3A54DF0043C0D3716B244A4AB0B96 /* Pods.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D89614A22F0A0A71D8ECDF82D44BE1F6 /* JSONWebToken */ = {
+			isa = PBXGroup;
+			children = (
+				35307727B81B818CC319890E1BE374E5 /* Base64.swift */,
+				6F27DA02C01DF8B44D401C217F908567 /* Claims.swift */,
+				D4456D2B9567FEE91E91945923840F9A /* Decode.swift */,
+				F61B3EE8A23C5F387D738D598A56BF3C /* JWT.swift */,
+				D20CAA481B793E767F39FDB1740AE0E1 /* Support Files */,
+			);
+			path = JSONWebToken;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0B27C5E1DF20D76B1A08FB620E785D2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0723957F2E7CE3BCCA4BE5408382D052 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4549C218538040CE0BCEFD047818F815 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7FA3BBC50720241AEE5D4249D684911 /* CryptoSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B76B10AFF6D10D4FC090258A6D5C73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59190F7B003764317523DBDEDB02D25 /* AeroGearOAuth2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7AFA7DCE60377EB03504CFC4E62CF37C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,60 +550,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D227E028388712B145E85D737FE3B1B /* Headers */ = {
+		F3FE71726D89716BD08067318708F248 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E71BC34E57EC2F9963107DE4224316E6 /* Pods-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0F11169C3BBB3C730D60769A6981106 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				947CC4F8C5CFA5B00200B10E272296E5 /* AeroGearOAuth2-umbrella.h in Headers */,
+				7AF3B632B944D4A9F571B8EE4FD1B5A4 /* JSONWebToken-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2FCDD86994F46E929E54432B6D97B163 /* Pods */ = {
+		58BE405B4E871CBBD26C3721B2B957F8 /* CryptoSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 277905B697757C666FD19B32BBC8DA23 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 6DCCD697B45A13559252431076F92996 /* Build configuration list for PBXNativeTarget "CryptoSwift" */;
 			buildPhases = (
-				F12CD97AEF594AE4F18343AA89202E11 /* Sources */,
-				0F4F31ECDA1AB60343F3E0EBD2C1B7A9 /* Frameworks */,
-				9D227E028388712B145E85D737FE3B1B /* Headers */,
+				050FFFBFEE1EF4998AC45890B3C659BC /* Sources */,
+				F97E173CD74142922E42CD5E67C0C995 /* Frameworks */,
+				4549C218538040CE0BCEFD047818F815 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7EB6309BC8B17B6169519DDA5BE965E8 /* PBXTargetDependency */,
-				FA19EF3B3D7488725B0D7D7D8547FD30 /* PBXTargetDependency */,
+			);
+			name = CryptoSwift;
+			productName = CryptoSwift;
+			productReference = 647DD5822E0478988DD1F7E66C2B4691 /* CryptoSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D5365734447B3A4089C1180AEC4FCB1 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2A73BDDF69F90EF2E8593656B95A394 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				7D4013F8B7C70FCDCE83973282BD30DC /* Sources */,
+				5011AC356B9998CA5C6B095D42A675F9 /* Frameworks */,
+				0B27C5E1DF20D76B1A08FB620E785D2C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66356E615DADE195D0848497B29F1087 /* PBXTargetDependency */,
+				C358C0A5B86C07E65B900E73B2CEC59D /* PBXTargetDependency */,
+				88148FF71293991231778232DC62ADD7 /* PBXTargetDependency */,
+				76F542E7DC4F5A38B1117A1B09341FBB /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = C87C4ED0D331C69B29CF18FFDCA6ABBD /* Pods.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7B109FF6BA04B07331CEA7B3029AB0C5 /* AeroGearOAuth2 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 654B87D5351979DA89BC9627BA5F4048 /* Build configuration list for PBXNativeTarget "AeroGearOAuth2" */;
-			buildPhases = (
-				597500C8E97849C8FD6C42ECA6DC3B63 /* Sources */,
-				6F6684ADFC0181116ADE293D0BFD6E39 /* Frameworks */,
-				C0F11169C3BBB3C730D60769A6981106 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7A6F5D4FEA266A5E59B71F65112CC51A /* PBXTargetDependency */,
-			);
-			name = AeroGearOAuth2;
-			productName = AeroGearOAuth2;
-			productReference = 6D61BB41A290B34584F32948AC913837 /* AeroGearOAuth2.framework */;
+			productReference = 21E3A54DF0043C0D3716B244A4AB0B96 /* Pods.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B6184234CE5B97D6DADDB68315E67B58 /* AeroGearHttp */ = {
@@ -371,7 +613,44 @@
 			);
 			name = AeroGearHttp;
 			productName = AeroGearHttp;
-			productReference = FDB0E29CDC6771533099BFAF7FA9CB70 /* AeroGearHttp.framework */;
+			productReference = 586D1D0DB20BF03F07E3EACFA1A4661C /* AeroGearHttp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1D5778557C763267589B83B495CBB8A /* JSONWebToken */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B696010736DB786357D9F0AFA2236CDC /* Build configuration list for PBXNativeTarget "JSONWebToken" */;
+			buildPhases = (
+				722D715E684833C103BEF90691F9D501 /* Sources */,
+				8D0F14EC3E8A4BB52AF8E3C560F2373C /* Frameworks */,
+				F3FE71726D89716BD08067318708F248 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				852CB2EB95528DB9DB49664EF4688689 /* PBXTargetDependency */,
+			);
+			name = JSONWebToken;
+			productName = JSONWebToken;
+			productReference = ED3558C214D105831B7DC494F17B63D6 /* JWT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBB834C15B76A1AF7F365FE0458A3306 /* AeroGearOAuth2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CFCD870E5C5DBB1DB2FB90188D2E7F2 /* Build configuration list for PBXNativeTarget "AeroGearOAuth2" */;
+			buildPhases = (
+				E86098874229D89EBC7E6C1D4C4DF9DC /* Sources */,
+				EB1F0AF4C0CE33BCD252DF399450FDC0 /* Frameworks */,
+				48B76B10AFF6D10D4FC090258A6D5C73 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E3EB4FEA7DD176097266421E82E3F9A /* PBXTargetDependency */,
+				231601847C251D1B04B5D7CA6C62157F /* PBXTargetDependency */,
+			);
+			name = AeroGearOAuth2;
+			productName = AeroGearOAuth2;
+			productReference = E8173A2EA0A1C019C419073BD6D2ED22 /* AeroGearOAuth2.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -391,35 +670,75 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 01123DB9AB38B7E142CCE4B0D3AF6004 /* Products */;
+			productRefGroup = D52180A826D4459C8AB1B5014AE8A11E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B6184234CE5B97D6DADDB68315E67B58 /* AeroGearHttp */,
-				7B109FF6BA04B07331CEA7B3029AB0C5 /* AeroGearOAuth2 */,
-				2FCDD86994F46E929E54432B6D97B163 /* Pods */,
+				FBB834C15B76A1AF7F365FE0458A3306 /* AeroGearOAuth2 */,
+				58BE405B4E871CBBD26C3721B2B957F8 /* CryptoSwift */,
+				E1D5778557C763267589B83B495CBB8A /* JSONWebToken */,
+				5D5365734447B3A4089C1180AEC4FCB1 /* Pods */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		597500C8E97849C8FD6C42ECA6DC3B63 /* Sources */ = {
+		050FFFBFEE1EF4998AC45890B3C659BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B0124F73A70B60B718B7C31AADC91B8 /* AccountManager.swift in Sources */,
-				DBC758DD1E8133BE9BF8B0642EA1DECB /* AeroGearOAuth2-dummy.m in Sources */,
-				70ADA9157408B84E1E89E227DD928776 /* Config.swift in Sources */,
-				207C62541B48F4AC6DEBE1810ACCB769 /* DateUtils.swift in Sources */,
-				47AC07606E6A0A38EB7A7694180C3551 /* FacebookOAuth2Module.swift in Sources */,
-				F2378283C6BE3F184F2B2D0B2EC96D7A /* KeycloakOAuth2Module.swift in Sources */,
-				734CCE9C2716E4B365F1EA02A206652E /* OAuth2Module.swift in Sources */,
-				68E3641C019F4BDFC8D935A84E0942DF /* OAuth2Session.swift in Sources */,
-				64A0C97265E9506BF4173AEE0B54EDDB /* OAuth2WebViewController.swift in Sources */,
-				BC50BDEFCF94D4234C5F0F604DB21495 /* OpenIDClaim.swift in Sources */,
-				9AC87B88781726024D947FE5B3505041 /* TelenorConnectOAuth2Module.swift in Sources */,
-				5223ABAA99F6C17C23C2AAE769C081F7 /* TrustedPersistantOAuth2Session.swift in Sources */,
-				FCD95727C36176FD790AE61EA1D5C48A /* UntrustedMemoryOAuth2Session.swift in Sources */,
+				7026EE15A1AF2E11304FC985088C6F60 /* AES.swift in Sources */,
+				9DFC000840AA9CBE0DF56ABEACCE894B /* ArrayExtension.swift in Sources */,
+				03BF0278CC64E72EF49F8EA0ACC0EF38 /* Authenticator.swift in Sources */,
+				12AFEE867BA0A3408B25AB4CCE6B871A /* BitExtension.swift in Sources */,
+				8A2545ACE12BBB1BF60930E143B8A5BF /* ChaCha20.swift in Sources */,
+				D4528FACC1C2B250BC31ED3FDB3AB80A /* Cipher.swift in Sources */,
+				C94D752921BA9AB8DC90FC62003EB77D /* CipherBlockMode.swift in Sources */,
+				654BC7E5D77B6E3FDE40E132F00138C8 /* CRC.swift in Sources */,
+				D521E48D79D9018795EB3F39A3D97658 /* CryptoSwift-dummy.m in Sources */,
+				AF234D514AC220FA7279E022163E09FB /* Generics.swift in Sources */,
+				EBAA65C516A757B3C4EB94F7E848F11F /* Hash.swift in Sources */,
+				C43CE9D606B0BC2FA6E57B9F4AA34336 /* HashProtocol.swift in Sources */,
+				64855C8F21F8E9DBA9D8828C27ECD93F /* HMAC.swift in Sources */,
+				E2F03004A82642E3644B4B90B90A4177 /* IntegerConvertible.swift in Sources */,
+				1664A4F02F94DDF9DEC11CD2F9E8192B /* IntExtension.swift in Sources */,
+				27402A3C5B14329D234572CACCC37F3C /* MD5.swift in Sources */,
+				1BF3E9F66ECF1EB08163F2E3B54017C7 /* NSDataExtension.swift in Sources */,
+				56D4B0B6CC513ACDB35C3115468B70B4 /* NSDataSequence.swift in Sources */,
+				A23F96157F1BF662CD6A56A047B04594 /* Operators.swift in Sources */,
+				7EF5CF1659E95F015AAC396E12E18F3F /* Padding.swift in Sources */,
+				A023E24CBA077B33508A688902C17047 /* PKCS5.swift in Sources */,
+				CFF2E9B6B89A0034927C13202E405470 /* PKCS7.swift in Sources */,
+				245B83DE51D53ADC772A2E5CC6B2F69F /* Poly1305.swift in Sources */,
+				99402ED916A30DE58D3AE77924FA86EF /* SHA1.swift in Sources */,
+				34943FF1EEB809BB8C42A134279B0141 /* SHA2.swift in Sources */,
+				10358639DC56CFEAAB1281FE0C13547A /* StringExtension.swift in Sources */,
+				959C60E797AB7D6E44115D36AD158947 /* UInt16Extension.swift in Sources */,
+				4BC5ABA8C910C6885A778A3879C06887 /* UInt32Extension.swift in Sources */,
+				BB64408E44933789261E0BF4664543A8 /* UInt64Extension.swift in Sources */,
+				CB4829090FB4C153E3741121381D24CC /* UInt8Extension.swift in Sources */,
+				26D592F22FD0B048A25790A349CF7636 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		722D715E684833C103BEF90691F9D501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6BE9BABAE744146A7A76CCE198F9F0 /* Base64.swift in Sources */,
+				4BAECF33D4FAC2BC0EC09FE755F21A67 /* Claims.swift in Sources */,
+				211C392761392E8824DD2BE0395CEA1E /* Decode.swift in Sources */,
+				57605CB02A4623494CDA5B4C7DD00846 /* JSONWebToken-dummy.m in Sources */,
+				DDB9F9E658A94F70997D037E94FAFAB6 /* JWT.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D4013F8B7C70FCDCE83973282BD30DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBD0CBAFBBB10C81105B53FF7734871 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,41 +760,78 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F12CD97AEF594AE4F18343AA89202E11 /* Sources */ = {
+		E86098874229D89EBC7E6C1D4C4DF9DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27FA756BF29523DAC37E61FEE933D5FD /* Pods-dummy.m in Sources */,
+				6D71C45A317205834AD8F0E7D1D923BC /* AccountManager.swift in Sources */,
+				A2C6D08A7F16E83CB12920A2AAD08784 /* AeroGearOAuth2-dummy.m in Sources */,
+				F1AD95898998386E1FB5DB9770C77C33 /* Config.swift in Sources */,
+				18FD56AF9B8A953367795E24AF6F50D7 /* DateUtils.swift in Sources */,
+				254E9EB3401CED2F0BA7CE05A1F3050E /* FacebookOAuth2Module.swift in Sources */,
+				B02527801351FEC06AFCDF0562F20852 /* IdTokenValidator.swift in Sources */,
+				9C4A6CE8DEAB0082C662112C24244367 /* KeycloakOAuth2Module.swift in Sources */,
+				67D75157CAF964A1AF080B32A881F0A4 /* OAuth2Module.swift in Sources */,
+				1FF7FFC30B38D41393509351FFBDFD94 /* OAuth2Session.swift in Sources */,
+				C15726C991AF2F71BD7BFFE32149DC51 /* OAuth2WebViewController.swift in Sources */,
+				5F23392076382F5919DFC5D01C9ED40A /* OpenIDClaim.swift in Sources */,
+				43D61F9DB08638047BDE5D31E2FE83A6 /* TelenorConnectOAuth2Module.swift in Sources */,
+				44F3AA02B917A2FF5F57B4A4723E4F8C /* TrustedPersistantOAuth2Session.swift in Sources */,
+				EFFDC7A480535A509231E7C1664646F4 /* UntrustedMemoryOAuth2Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7A6F5D4FEA266A5E59B71F65112CC51A /* PBXTargetDependency */ = {
+		231601847C251D1B04B5D7CA6C62157F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONWebToken;
+			target = E1D5778557C763267589B83B495CBB8A /* JSONWebToken */;
+			targetProxy = F69C7FB577551AB2A4DC2850AF8AD509 /* PBXContainerItemProxy */;
+		};
+		66356E615DADE195D0848497B29F1087 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AeroGearHttp;
 			target = B6184234CE5B97D6DADDB68315E67B58 /* AeroGearHttp */;
-			targetProxy = EAD1D3FBCBF315C10AB18185EFEA738C /* PBXContainerItemProxy */;
+			targetProxy = B7CC447F8426BEF4555FD59F6BC509E7 /* PBXContainerItemProxy */;
 		};
-		7EB6309BC8B17B6169519DDA5BE965E8 /* PBXTargetDependency */ = {
+		76F542E7DC4F5A38B1117A1B09341FBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONWebToken;
+			target = E1D5778557C763267589B83B495CBB8A /* JSONWebToken */;
+			targetProxy = 60327F82086F612F588EF5FC193D79FD /* PBXContainerItemProxy */;
+		};
+		852CB2EB95528DB9DB49664EF4688689 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			target = 58BE405B4E871CBBD26C3721B2B957F8 /* CryptoSwift */;
+			targetProxy = A4254BBDFC2670FBEC5805BACBD45A17 /* PBXContainerItemProxy */;
+		};
+		88148FF71293991231778232DC62ADD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			target = 58BE405B4E871CBBD26C3721B2B957F8 /* CryptoSwift */;
+			targetProxy = 9EE5EAC200622DF49F6A764BF9E13FB6 /* PBXContainerItemProxy */;
+		};
+		9E3EB4FEA7DD176097266421E82E3F9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AeroGearHttp;
 			target = B6184234CE5B97D6DADDB68315E67B58 /* AeroGearHttp */;
-			targetProxy = 69129E59A97B43374528BB8A10F14A25 /* PBXContainerItemProxy */;
+			targetProxy = 13AA1B5C17DE2C349C6156024AA9218A /* PBXContainerItemProxy */;
 		};
-		FA19EF3B3D7488725B0D7D7D8547FD30 /* PBXTargetDependency */ = {
+		C358C0A5B86C07E65B900E73B2CEC59D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AeroGearOAuth2;
-			target = 7B109FF6BA04B07331CEA7B3029AB0C5 /* AeroGearOAuth2 */;
-			targetProxy = D2A8AFB888F154A3C880E95D5C8C8CEC /* PBXContainerItemProxy */;
+			target = FBB834C15B76A1AF7F365FE0458A3306 /* AeroGearOAuth2 */;
+			targetProxy = 51C3155371C6465DE0CC6D153B5F57EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		065F8AB4ECB5C8E37D34C97E9FD8D482 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D653EF212465F28D81555395D160C34 /* AeroGearHttp.xcconfig */;
+			baseConfigurationReference = AA86EB5540F6E37CB5020E3AE3DB0C4A /* AeroGearHttp.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -500,7 +856,7 @@
 			};
 			name = Release;
 		};
-		5A004B9F60367AC500A8EA592F58CE46 /* Debug */ = {
+		0BFA717FA70AA399B0680B2C1E6A69BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
 			buildSettings = {
@@ -531,9 +887,149 @@
 			};
 			name = Debug;
 		};
+		0E205A9121F7BC653E76AA2A6373C6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A9A352CFD3D3C03A2E86FDDFB9EC008 /* JSONWebToken.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSONWebToken/JSONWebToken-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSONWebToken/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSONWebToken/JSONWebToken.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JWT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2DDFD0E9508771252D8C1D27233ED57C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEC7EE02C42AF80EE0043224293CA39F /* AeroGearOAuth2.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AeroGearOAuth2/AeroGearOAuth2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AeroGearOAuth2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AeroGearOAuth2/AeroGearOAuth2.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AeroGearOAuth2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		307DC67AEDA673762AD260FF9CB22CA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A4EB524CB6FB2C49CCC012E730E837 /* CryptoSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CryptoSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CryptoSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4A6E42596A4E5B3967C21B89D57089E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEC7EE02C42AF80EE0043224293CA39F /* AeroGearOAuth2.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AeroGearOAuth2/AeroGearOAuth2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AeroGearOAuth2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AeroGearOAuth2/AeroGearOAuth2.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AeroGearOAuth2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59567A844A15C1C0F52969A1F699C00F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		6368D10BED4F5777AE8265E89994D293 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D653EF212465F28D81555395D160C34 /* AeroGearHttp.xcconfig */;
+			baseConfigurationReference = AA86EB5540F6E37CB5020E3AE3DB0C4A /* AeroGearHttp.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -598,9 +1094,9 @@
 			};
 			name = Debug;
 		};
-		ADE7B1BC6641DE462DCF923542056E0E /* Release */ = {
+		D1F64082B80EE261B3290AB3B2480423 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDDA615F4BC6EA3053C704724B26CE57 /* AeroGearOAuth2.xcconfig */;
+			baseConfigurationReference = C9A4EB524CB6FB2C49CCC012E730E837 /* CryptoSwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -609,71 +1105,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AeroGearOAuth2/AeroGearOAuth2-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AeroGearOAuth2/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CryptoSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AeroGearOAuth2/AeroGearOAuth2.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AeroGearOAuth2;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BAB6AAC5DB5D7118D7B81CBC43324AEA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C3CDAAD898A199666E5A1FCE01BBB34E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDDA615F4BC6EA3053C704724B26CE57 /* AeroGearOAuth2.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AeroGearOAuth2/AeroGearOAuth2-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AeroGearOAuth2/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AeroGearOAuth2/AeroGearOAuth2.modulemap";
+				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AeroGearOAuth2;
+				PRODUCT_NAME = CryptoSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -682,6 +1121,33 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		E8C6C782672E1D9845B976DAB339414F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A9A352CFD3D3C03A2E86FDDFB9EC008 /* JSONWebToken.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSONWebToken/JSONWebToken-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSONWebToken/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSONWebToken/JSONWebToken.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JWT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -720,15 +1186,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		277905B697757C666FD19B32BBC8DA23 /* Build configuration list for PBXNativeTarget "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5A004B9F60367AC500A8EA592F58CE46 /* Debug */,
-				BAB6AAC5DB5D7118D7B81CBC43324AEA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -738,11 +1195,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		654B87D5351979DA89BC9627BA5F4048 /* Build configuration list for PBXNativeTarget "AeroGearOAuth2" */ = {
+		6DCCD697B45A13559252431076F92996 /* Build configuration list for PBXNativeTarget "CryptoSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3CDAAD898A199666E5A1FCE01BBB34E /* Debug */,
-				ADE7B1BC6641DE462DCF923542056E0E /* Release */,
+				D1F64082B80EE261B3290AB3B2480423 /* Debug */,
+				307DC67AEDA673762AD260FF9CB22CA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CFCD870E5C5DBB1DB2FB90188D2E7F2 /* Build configuration list for PBXNativeTarget "AeroGearOAuth2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6E42596A4E5B3967C21B89D57089E0 /* Debug */,
+				2DDFD0E9508771252D8C1D27233ED57C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -752,6 +1218,24 @@
 			buildConfigurations = (
 				6368D10BED4F5777AE8265E89994D293 /* Debug */,
 				065F8AB4ECB5C8E37D34C97E9FD8D482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2A73BDDF69F90EF2E8593656B95A394 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BFA717FA70AA399B0680B2C1E6A69BE /* Debug */,
+				59567A844A15C1C0F52969A1F699C00F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B696010736DB786357D9F0AFA2236CDC /* Build configuration list for PBXNativeTarget "JSONWebToken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E205A9121F7BC653E76AA2A6373C6FB /* Debug */,
+				E8C6C782672E1D9845B976DAB339414F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

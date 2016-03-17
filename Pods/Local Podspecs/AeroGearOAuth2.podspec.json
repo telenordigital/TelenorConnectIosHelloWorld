@@ -1,13 +1,13 @@
 {
   "name": "AeroGearOAuth2",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "summary": "OAuth2 client library based on aerogear-ios-http",
-  "homepage": "https://github.com/aerogear/aerogear-ios-oauth2",
+  "homepage": "https://github.com/telenordigital/aerogear-ios-oauth2",
   "license": "Apache License, Version 2.0",
   "authors": "Red Hat, Inc.",
   "source": {
-    "git": "https://github.com/aerogear/aerogear-ios-oauth2.git",
-    "tag": "0.5.0"
+    "git": "https://github.com/telenordigital/aerogear-ios-oauth2.git",
+    "tag": "0.6.0"
   },
   "platforms": {
     "ios": 8.0
@@ -17,6 +17,9 @@
   "frameworks": "Security",
   "dependencies": {
     "AeroGearHttp": [
+
+    ],
+    "JSONWebToken": [
 
     ]
   }
