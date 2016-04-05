@@ -21,8 +21,17 @@ class SignInViewController: UIViewController {
         accountId: "telenor-connect-ios-hello-world")
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         oauth2Module = AccountManager.getAccountByConfig(config) ?? AccountManager.addAccount(self.config, moduleClass: TelenorConnectOAuth2Module.self)
-        print("oauth2Module?.isAuthorized()=\(oauth2Module?.isAuthorized())")
+        print("oauth2Module!.isAuthorized()=\(oauth2Module!.isAuthorized())")
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        // Note the method will be called after (Safari) WebView completes logging in the user
+        if oauth2Module!.isAuthorized() {
+            self.performSegueWithIdentifier("signedIn", sender: nil)
+        }
     }
 
     @IBAction func signInPressed(sender: AnyObject) {
@@ -33,21 +42,22 @@ class SignInViewController: UIViewController {
         print("oauth2Module.isAuthorized()=\(oauth2Module.isAuthorized())")
         
         oauth2Module.login { (accessToken: AnyObject?, userInfo: OpenIDClaim?, error: NSError?) -> Void in
-            if let accessToken = accessToken {
-                print("accessToken=\(accessToken)")
-                self.userInfo = userInfo
-                self.performSegueWithIdentifier("signedIn", sender: nil)
-            }
-            if let error = error {
+            guard let accessToken = accessToken else {
                 print("error=\(error)")
+                return
             }
+            
+            print("accessToken=\(accessToken)")
+            self.userInfo = userInfo
+            self.performSegueWithIdentifier("signedIn", sender: nil) // works for external browser but not (Safari) WebView.
+            // In latter case viewDidAppear will perform the segue
         }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "signedIn") {
             let signedInController = segue.destinationViewController as! SignedInViewController
-            signedInController.infoText = String(userInfo)
+            signedInController.userInfo = userInfo
             signedInController.oauth2Module = oauth2Module
         }
     }

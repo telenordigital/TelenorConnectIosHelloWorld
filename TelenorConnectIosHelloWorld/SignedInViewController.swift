@@ -13,7 +13,7 @@ import AeroGearOAuth2
 class SignedInViewController: UIViewController {
     @IBOutlet weak var signedInInfo: UILabel!
     
-    var infoText: String?
+    var userInfo: AnyObject?
     var oauth2Module: OAuth2Module?
     
     override func viewDidLoad() {
@@ -26,18 +26,19 @@ class SignedInViewController: UIViewController {
             print("Failed to getIdTokenPayload: \(error)")
         }
         
-        if let infoText = infoText {
-            signedInInfo.text = infoText
-        } else {
-            signedInInfo.text = "Loading user info…"
-            self.oauth2Module?.login { (accessToken: AnyObject?, userInfo: OpenIDClaim?, error: NSError?) -> Void in
-                if let accessToken = accessToken {
-                    print("accessToken=\(accessToken)")
-                    self.signedInInfo.text = String(userInfo)
-                }
-                if let error = error {
-                    print("error=\(error)")
-                }
+        if let infoText = userInfo {
+            signedInInfo.text = String(infoText)
+            return
+        }
+        
+        signedInInfo.text = "Loading user info…"
+        self.oauth2Module?.login { (accessToken: AnyObject?, userInfo: OpenIDClaim?, error: NSError?) -> Void in
+            if let accessToken = accessToken {
+                print("accessToken=\(accessToken)")
+                self.signedInInfo.text = String(userInfo)
+            }
+            if let error = error {
+                print("error=\(error)")
             }
         }
     }
@@ -48,7 +49,7 @@ class SignedInViewController: UIViewController {
             print("response=\(response)")
             print("error=\(error)")
 
-            self.performSegueWithIdentifier("signedOut", sender: nil)
+            self.dismissViewControllerAnimated(true, completion: nil)
         })
     }
     
