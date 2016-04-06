@@ -28,7 +28,8 @@ class SignInViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        // Note the method will be called after (Safari) WebView completes logging in the user
+        super.viewDidAppear(animated)
+        // Note: The method will be called after (Safari) WebView completes logging in the user
         if oauth2Module!.isAuthorized() {
             self.performSegueWithIdentifier("signedIn", sender: nil)
         }
@@ -41,7 +42,7 @@ class SignInViewController: UIViewController {
         
         print("oauth2Module.isAuthorized()=\(oauth2Module.isAuthorized())")
         
-        oauth2Module.login { (accessToken: AnyObject?, userInfo: OpenIDClaim?, error: NSError?) -> Void in
+        oauth2Module.login {(accessToken: AnyObject?, userInfo: OpenIDClaim?, error: NSError?) -> Void in
             guard let accessToken = accessToken else {
                 print("error=\(error)")
                 return
@@ -49,8 +50,6 @@ class SignInViewController: UIViewController {
             
             print("accessToken=\(accessToken)")
             self.userInfo = userInfo
-            self.performSegueWithIdentifier("signedIn", sender: nil) // works for external browser but not (Safari) WebView.
-            // In latter case viewDidAppear will perform the segue
         }
     }
     
