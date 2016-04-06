@@ -22,7 +22,7 @@ CHECKOUT OPTIONS:
     :commit: 20e954caa168ed8605ae05322fbfaf038fd79366
     :git: https://github.com/aerogear/aerogear-ios-http
   AeroGearOAuth2:
-    :commit: 0cc8d58591f2220679c3c0059098d213b2817b49
+    :commit: 1956344a09b8f68a118be903b9818e6f6971763f
     :git: https://github.com/telenordigital/aerogear-ios-oauth2
 
 SPEC CHECKSUMS:
