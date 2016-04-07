@@ -15,8 +15,8 @@ class SignInViewController: UIViewController {
     
     var userInfo: AnyObject?
     var oauth2Module: OAuth2Module?
-    let config = TelenorConnectConfig(clientId: "telenordigital-connectexample-android",
-        redirectUrl: "telenordigital-connectexample-android://oauth2callback",
+    let config = TelenorConnectConfig(clientId: "telenordigital-connectexample-ios",
+        redirectUrl: "telenordigital-connectexample-ios://oauth2callback",
         useStaging: true,
         scopes: ["profile", "openid", "email"],
         accountId: "telenor-connect-ios-hello-world")

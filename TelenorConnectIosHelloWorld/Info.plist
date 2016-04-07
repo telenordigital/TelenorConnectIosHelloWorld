@@ -25,7 +25,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>telenordigital-connectexample-android</string>
+				<string>telenordigital-connectexample-ios</string>
 			</array>
 		</dict>
 	</array>
