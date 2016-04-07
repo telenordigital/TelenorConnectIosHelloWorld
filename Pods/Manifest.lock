@@ -1,6 +1,6 @@
 PODS:
   - AeroGearHttp (0.5.1)
-  - AeroGearOAuth2 (0.6.0):
+  - AeroGearOAuth2 (0.6.1):
     - AeroGearHttp
     - JSONWebToken
   - CryptoSwift (0.2.2)
@@ -22,12 +22,12 @@ CHECKOUT OPTIONS:
     :commit: 20e954caa168ed8605ae05322fbfaf038fd79366
     :git: https://github.com/aerogear/aerogear-ios-http
   AeroGearOAuth2:
-    :commit: ba33ba04fe8deb55d25fc2f6b42285a99ef77715
+    :commit: d27ca37c0dab12468bb3e6af6ec71ae7126800d6
     :git: https://github.com/telenordigital/aerogear-ios-oauth2
 
 SPEC CHECKSUMS:
   AeroGearHttp: f3e362a7f9e15abcd914d5c3df68999880b22f18
-  AeroGearOAuth2: b7c0ff8e63a5c64e7d9af1bd39946b2f9766473c
+  AeroGearOAuth2: 4749e874a47e4ed6f6a003ecb2edceb5da8f0419
   CryptoSwift: d382228d6301c09474132417878a741c2a2e68cd
   JSONWebToken: acdab3aeedf8d44f5cf09ad469deb42c4faf3740
 
