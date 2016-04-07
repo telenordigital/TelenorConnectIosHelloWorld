@@ -8,6 +8,7 @@
 
 import UIKit
 
+import AeroGearHttp
 import AeroGearOAuth2
 
 class SignedInViewController: UIViewController {
@@ -20,27 +21,38 @@ class SignedInViewController: UIViewController {
         super.viewDidLoad()
         print("oauth2Module?.isAuthorized()=\(oauth2Module?.isAuthorized())")
         
-        do {
-            try print("oauth2Module.getIdTokenPayload()=\(oauth2Module?.getIdTokenPayload())")
-        } catch {
-            print("Failed to getIdTokenPayload: \(error)")
-        }
-        
+        // We can get information about the user from the SignInViewController…
         if let infoText = userInfo {
             signedInInfo.text = String(infoText)
             return
         }
         
-        signedInInfo.text = "Loading user info…"
-        self.oauth2Module?.login { (accessToken: AnyObject?, userInfo: OpenIDClaim?, error: NSError?) -> Void in
-            if let accessToken = accessToken {
-                print("accessToken=\(accessToken)")
-                self.signedInInfo.text = String(userInfo)
-            }
-            if let error = error {
-                print("error=\(error)")
-            }
+        // The ID token payload…
+        do {
+            let idTokenPayload = try oauth2Module?.getIdTokenPayload()
+            signedInInfo.text = String(idTokenPayload)
+            return
+        } catch {
+            print("Failed to getIdTokenPayload: \(error)")
         }
+        
+        // Or the userInfoEndpoint.
+        signedInInfo.text = "Fetching user info…"
+        let http = Http()
+        http.authzModule = oauth2Module
+        guard let userInfoEndpoint = self.oauth2Module?.config.userInfoEndpoint else {
+            self.signedInInfo.text = "Couldn't load userinfo"
+            return
+        }
+        
+        http.request(.GET, path: userInfoEndpoint, completionHandler: { (response: AnyObject?, error: NSError?) -> Void in
+            if let error = error {
+                print("Got error when fetching userinfo. error=\(error)")
+                return
+            }
+            
+            self.signedInInfo.text = String(response)
+        })
     }
     
     @IBAction func signOut(sender: AnyObject) {
