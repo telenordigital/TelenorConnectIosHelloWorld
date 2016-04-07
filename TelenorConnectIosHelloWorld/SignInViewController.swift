@@ -41,7 +41,10 @@ class SignInViewController: UIViewController {
             return
         }
         
-        print("oauth2Module.isAuthorized()=\(oauth2Module.isAuthorized())")
+        if oauth2Module.isAuthorized() {
+            self.performSegueWithIdentifier("signedIn", sender: nil)
+            return
+        }
         
         oauth2Module.login {(accessToken: AnyObject?, userInfo: OpenIDClaim?, error: NSError?) -> Void in
             guard let accessToken = accessToken else {
