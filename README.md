@@ -2,10 +2,15 @@
 Hello world example for Telenor Connect iOS SDK
 
 ## Install and run
-1. `git clone git@github.com:telenordigital/TelenorConnectIosHelloWorld.git` (clone this repository locally)
-2. `open TelenorConnectIosHelloWorld.xcworkspace` (open the project)
-3. `CMD+R`(run the example)
+1. `git clone git@github.com:telenordigital/TelenorConnectIosHelloWorld.git`
+2. `open TelenorConnectIosHelloWorld.xcworkspace`
+3. `CMD+R`
 
+
+That is:
+1. Clone.
+2. Open TelenorConnectIosHelloWorld.xcworkspace.
+3. 3. Build and run.
 
 ## Sigin example for Telenor Connect
 See [SignInViewController.swift](https://github.com/telenordigital/TelenorConnectIosHelloWorld/blob/master/TelenorConnectIosHelloWorld/SignInViewController.swift).
