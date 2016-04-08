@@ -8,7 +8,7 @@
 
 import UIKit
 
-import AeroGearOAuth2
+import TDConnectIosSdk
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -9,7 +9,7 @@
 import UIKit
 
 import AeroGearHttp
-import AeroGearOAuth2
+import TDConnectIosSdk
 
 class SignedInViewController: UIViewController {
     @IBOutlet weak var signedInInfo: UILabel!

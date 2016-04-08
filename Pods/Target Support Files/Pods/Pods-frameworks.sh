@@ -85,13 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/AeroGearHttp.framework"
-  install_framework "Pods/AeroGearOAuth2.framework"
   install_framework "Pods/CryptoSwift.framework"
   install_framework "Pods/JWT.framework"
+  install_framework "Pods/TDConnectIosSdk.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/AeroGearHttp.framework"
-  install_framework "Pods/AeroGearOAuth2.framework"
   install_framework "Pods/CryptoSwift.framework"
   install_framework "Pods/JWT.framework"
+  install_framework "Pods/TDConnectIosSdk.framework"
 fi

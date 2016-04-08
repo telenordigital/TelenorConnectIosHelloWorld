@@ -1,0 +1,6 @@
+framework module TDConnectIosSdk {
+  umbrella header "TDConnectIosSdk-umbrella.h"
+
+  export *
+  module * { export * }
+}

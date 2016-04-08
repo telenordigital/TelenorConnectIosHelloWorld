@@ -9,7 +9,7 @@
 import UIKit
 
 import AeroGearHttp
-import AeroGearOAuth2
+import TDConnectIosSdk
 
 class SignInViewController: UIViewController {
     
