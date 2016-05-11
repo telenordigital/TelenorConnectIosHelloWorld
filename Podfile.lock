@@ -22,7 +22,7 @@ CHECKOUT OPTIONS:
     :commit: 20e954caa168ed8605ae05322fbfaf038fd79366
     :git: https://github.com/aerogear/aerogear-ios-http
   TDConnectIosSdk:
-    :commit: 48f4ae4bede057b9401e014ff2e3cd44cafde397
+    :commit: 60bdc24d9279f519b337da9c9a8acfba567d392c
     :git: https://github.com/telenordigital/connect-ios-sdk
 
 SPEC CHECKSUMS:
