@@ -3,7 +3,7 @@ PODS:
   - CryptoSwift (0.4.1)
   - JSONWebToken (1.5.0):
     - CryptoSwift (~> 0.4.0)
-  - TDConnectIosSdk (0.6.3):
+  - TDConnectIosSdk (0.6.4):
     - AeroGearHttp
     - JSONWebToken
 
@@ -22,13 +22,13 @@ CHECKOUT OPTIONS:
     :commit: 20e954caa168ed8605ae05322fbfaf038fd79366
     :git: https://github.com/aerogear/aerogear-ios-http
   TDConnectIosSdk:
-    :commit: 02ba191578602fecd9f4e5ba68fcc2418b1a7aa1
+    :commit: ff933353d67fabcf084c7b2602228ccf07e4d241
     :git: https://github.com/telenordigital/connect-ios-sdk
 
 SPEC CHECKSUMS:
   AeroGearHttp: f3e362a7f9e15abcd914d5c3df68999880b22f18
   CryptoSwift: 25b5aff3f260967391f8fff2e9abe4254d2c6fd5
   JSONWebToken: 6c8968ace6b60b2e6156a7bbe5019fd9b5ff9b5a
-  TDConnectIosSdk: 7217d982c694484b884a432c98a645b98792b1d2
+  TDConnectIosSdk: 9fe288ba49c7992441e4aed0718bd90ff6b3e244
 
 COCOAPODS: 0.39.0
