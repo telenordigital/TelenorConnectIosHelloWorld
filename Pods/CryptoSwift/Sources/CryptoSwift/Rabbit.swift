@@ -6,7 +6,9 @@
 //  Copyright © 2015 Marcin Krzyzanowski. All rights reserved.
 //
 
-final public class Rabbit {
+private typealias Key = SecureBytes
+
+final public class Rabbit: BlockCipher {
     
     /// Size of IV in bytes
     public static let ivSize = 64 / 8
@@ -18,7 +20,7 @@ final public class Rabbit {
     public static let blockSize = 128 / 8
     
     /// Key
-    private let key: [UInt8]
+    private let key: Key
     
     /// IV (optional)
     private let iv: [UInt8]?
@@ -50,7 +52,7 @@ final public class Rabbit {
     }
     
     public init?(key:[UInt8], iv:[UInt8]?) {
-        self.key = key
+        self.key = Key(bytes: key)
         self.iv = iv
         
         guard key.count == Rabbit.keySize && (iv == nil || iv!.count == Rabbit.ivSize) else {
@@ -64,12 +66,12 @@ final public class Rabbit {
         
         // Key divided into 8 subkeys
         var k = [UInt32](count: 8, repeatedValue: 0)
-        for var j = 0; j < 8; j++ {
+        for j in 0..<8 {
             k[j] = UInt32(key[Rabbit.blockSize - (2*j + 1)]) | (UInt32(key[Rabbit.blockSize - (2*j + 2)]) << 8)
         }
         
         // Initialize state and counter variables from subkeys
-        for var j = 0; j < 8; j++ {
+        for j in 0..<8 {
             if j % 2 == 0 {
                 x[j] = (k[(j+1) % 8] << 16) | k[j]
                 c[j] = (k[(j+4) % 8] << 16) | k[(j+5) % 8]
@@ -86,7 +88,7 @@ final public class Rabbit {
         nextState()
         
         // Reinitialize counter variables
-        for var j = 0; j < 8; j++ {
+        for j in 0..<8 {
             c[j] = c[j] ^ x[(j+4) % 8]
         }
         
@@ -123,7 +125,7 @@ final public class Rabbit {
     private func nextState() {
         // Before an iteration the counters are incremented
         var carry = p7
-        for var j = 0; j < 8; j++ {
+        for j in 0..<8 {
             let prev = c[j]
             c[j] = prev &+ a[j] &+ carry
             carry = prev > c[j] ? 1 : 0 // detect overflow
@@ -163,7 +165,7 @@ final public class Rabbit {
         output16[0] = UInt16(truncatingBitPattern: x[6] >> 16) ^ UInt16(truncatingBitPattern: x[1])
         
         var output8 = [UInt8](count: Rabbit.blockSize, repeatedValue: 0)
-        for var j = 0; j < output16.count; j++ {
+        for j in 0..<output16.count {
             output8[j * 2] = UInt8(truncatingBitPattern: output16[j] >> 8)
             output8[j * 2 + 1] = UInt8(truncatingBitPattern: output16[j])
         }
@@ -176,13 +178,18 @@ final public class Rabbit {
         
         var result = [UInt8](count: bytes.count, repeatedValue: 0)
         var output = nextOutput()
-        for var byteIdx = 0, outputIdx = 0; byteIdx < bytes.count; byteIdx++, outputIdx++ {
+        var byteIdx = 0
+        var outputIdx = 0
+        while byteIdx < bytes.count {
             if (outputIdx == Rabbit.blockSize) {
                 output = nextOutput()
                 outputIdx = 0
             }
             
             result[byteIdx] = bytes[byteIdx] ^ output[outputIdx]
+
+            byteIdx += 1
+            outputIdx += 1
         }
         return result
     }
@@ -193,9 +200,9 @@ final public class Rabbit {
 }
 
 
-// MARK: - Cipher
+// MARK: - CipherType
 
-extension Rabbit: Cipher {
+extension Rabbit: CipherProtocol {
     public func cipherEncrypt(bytes:[UInt8]) -> [UInt8] {
         return self.encrypt(bytes)
     }

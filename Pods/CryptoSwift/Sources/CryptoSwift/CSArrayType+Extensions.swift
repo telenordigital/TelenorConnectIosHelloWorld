@@ -17,11 +17,12 @@ extension Array: CSArrayType {
 }
 
 public extension CSArrayType where Generator.Element == UInt8 {
-    
     public func toHexString() -> String {
         return self.lazy.reduce("") { $0 + String(format:"%02x", $1) }
     }
-    
+}
+
+public extension CSArrayType where Generator.Element == UInt8 {
     public func md5() -> [Generator.Element] {
         return Hash.md5(cs_arrayValue()).calculate()
     }
@@ -54,11 +55,11 @@ public extension CSArrayType where Generator.Element == UInt8 {
         return Hash.crc16(cs_arrayValue(), seed: seed).calculate()
     }
     
-    public func encrypt(cipher: Cipher) throws -> [Generator.Element] {
+    public func encrypt(cipher: CipherProtocol) throws -> [Generator.Element] {
         return try cipher.cipherEncrypt(cs_arrayValue())
     }
 
-    public func decrypt(cipher: Cipher) throws -> [Generator.Element] {
+    public func decrypt(cipher: CipherProtocol) throws -> [Generator.Element] {
         return try cipher.cipherDecrypt(cs_arrayValue())
     }
     

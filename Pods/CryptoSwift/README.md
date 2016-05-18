@@ -31,8 +31,10 @@ Good mood
 - [SHA256](http://tools.ietf.org/html/rfc6234)
 - [SHA384](http://tools.ietf.org/html/rfc6234)
 - [SHA512](http://tools.ietf.org/html/rfc6234)
-- [CRC32](http://en.wikipedia.org/wiki/Cyclic_redundancy_check) (not hash)
-- [CRC16](http://en.wikipedia.org/wiki/Cyclic_redundancy_check) (not hash)
+
+#### Cyclic Redundancy Check (CRC)
+- [CRC32](http://en.wikipedia.org/wiki/Cyclic_redundancy_check)
+- [CRC16](http://en.wikipedia.org/wiki/Cyclic_redundancy_check)
 
 #####Cipher
 - [AES-128, AES-192, AES-256](http://csrc.nist.gov/publications/fips/fips197/fips-197.pdf)
@@ -46,11 +48,17 @@ Good mood
 #####Cipher block mode
 - Electronic codebook ([ECB](http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_codebook_.28ECB.29))
 - Cipher-block chaining ([CBC](http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher-block_chaining_.28CBC.29))
+- Propagating Cipher Block Chaining ([PCBC](http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Propagating_Cipher_Block_Chaining_.28PCBC.29))
 - Cipher feedback ([CFB](http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_feedback_.28CFB.29))
+- Output Feedback ([OFB](http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Output_Feedback_.28OFB.29))
 - Counter ([CTR](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Counter_.28CTR.29))
+
+#####Password-Based Key Derivation Function
+- [PBKDF2](http://tools.ietf.org/html/rfc2898#section-5.2) (Password-Based Key Derivation Function 2)
 
 #####Data padding
 - [PKCS#7](http://tools.ietf.org/html/rfc5652#section-6.3)
+- NoPadding
 
 ##Why
 [Why?](https://github.com/krzyzanowskim/CryptoSwift/issues/5) [Because I can](https://github.com/krzyzanowskim/CryptoSwift/issues/5#issuecomment-53379391).
@@ -59,7 +67,7 @@ Good mood
 
 For latest version, please check **develop** branch. This is latest development version that will be merged into **master** branch at some point.
 
-- If you want to contribute, submit a [pull request](https://github.com/krzyzanowskim/CryptoSwift/pulls).
+- If you want to contribute, submit a [pull request](https://github.com/krzyzanowskim/CryptoSwift/pulls) against a development `develop` branch.
 - If you found a bug, [open an issue](https://github.com/krzyzanowskim/CryptoSwift/issues).
 - If you have a feature request, [open an issue](https://github.com/krzyzanowskim/CryptoSwift/issues).
 
@@ -87,11 +95,10 @@ In the project, you'll find three targets, configured for each supported SDK:
 
 You may need to choose the one you need to build `CryptoSwift.framework` for your application.
 
-####CryptoSwift.framework
+####Older Swift
 
-Alternatively, you can build the Universal Framework and link it in your Xcode project. To do that please run `build.sh` script and find resulting frameworks in `Framework` directory.
-
-Looking for version for Swift 1.2? check branch **swift12**, it's there.
+- Swift 1.2: branch [swift12](https://github.com/krzyzanowskim/CryptoSwift/tree/swift12).
+- Swift 2.1: branch [swift21](https://github.com/krzyzanowskim/CryptoSwift/tree/swift21)
 
 ####CocoaPods
 
@@ -134,6 +141,17 @@ You can use [Swift Package Manager](https://swift.org/package-manager/) and spec
 import CryptoSwift
 ```
 
+#####Conversion between NSData and [UInt8]
+
+For you convenience CryptoSwift provide two function to easily convert array of bytes to NSData and other way around:
+
+```swift
+let data: NSData = NSData(bytes: [0x01, 0x02, 0x03])
+let bytes:[UInt8] = data.arrayOfBytes()
+```
+
+#####Calculate Hash
+
 For your convenience you should use extensions methods like encrypt(), decrypt(), md5(), sha1() and so on.
 
 Hashing a data or array of bytes (aka `Array<UInt8>`)
@@ -146,7 +164,6 @@ let output = input.md5()
 
 print(output.toHexString())
 ```
-
 
 ```swift
 let data = NSData()
@@ -168,33 +185,52 @@ Hashing a String and printing result
 
 ```swift
 let hash = "123".md5()
-```    
+```
+
+#####Message authenticators
+
+```swift
+// Calculate Message Authentication Code (MAC) for message
+let mac: [UInt8] = try! Authenticator.Poly1305(key: key).authenticate(message)
+let hmac: [UInt8] = try! Authenticator.HMAC(key: key, variant: .sha256).authenticate(message)
+```
+
+#####Password-Based Key Derivation Function
+
+```swift
+let password: [UInt8] = "s33krit".utf8.map {$0}
+let salt: [UInt8] = "nacl".utf8.map {$0}
+
+let value = try! PKCS5.PBKDF2(password: password, salt: salt, iterations: 4096, hashVariant: .sha256).calculate()
+value.toHexString() // print Hex representation
+```
+
+#####Data Padding
     
 Some content-encryption algorithms assume the input length is a multiple of k octets, where k is greater than one. For such algorithms, the input shall be padded.
 
 ```swift
-let paddedData = PKCS7().add(bytes, AES.blockSize)
+let paddedData = PKCS7().add(arr, blockSize: AES.blockSize)
 ```
 
-Working with Ciphers
-
-ChaCha20
+####Working with Ciphers
+#####ChaCha20
 
 ```swift
 let encrypted: [UInt8] = ChaCha20(key: key, iv: iv).encrypt(message)
 let decrypted: [UInt8] = ChaCha20(key: key, iv: iv).decrypt(encrypted)
 ```
 
-Rabbit
+#####Rabbit
 
 ```swift
 let encrypted = Rabbit(key: key, iv: iv)?.encrypt(plaintext)
 let decrypted = Rabbit(key: key, iv: iv)?.decrypt(encrypted!)
 ```
 
-AES
+#####AES
 
-Notice regarding padding: *Manual padding of data is optional and CryptoSwift by default always will add PKCS7 padding before encryption, and remove after decryption when __Cipher__ enum is used. If you need manually disable/enable padding, you can do this by setting parameter for encrypt()/decrypt() on class __AES__.*
+Notice regarding padding: *Manual padding of data is optional and CryptoSwift is using PKCS7 padding by default. If you need manually disable/enable padding, you can do this by setting parameter for __AES__ class*
 
 Basic:
 ```swift
@@ -205,17 +241,20 @@ let input: [UInt8] = [0,1,2,3,4,5,6,7,8,9]
 input.encrypt(AES(key: "secret0key000000", iv:"0123456789012345", blockMode: .CBC))
 ```
 
-Encrypt String to Base64 string result:
+Encrypt/Decrypt String to Base64 encoded string:
 
 ```swift
 // Encrypt string and get Base64 representation of result
-let base64: String = try! "my secret string".encrypt(AES(key: "secret0key000000", iv: "0123456789012345"))
+let base64String = try! "my secret string".encrypt(AES(key: "secret0key000000", iv: "0123456789012345")).toBase64()
+
+// Decrypt Base64 encrypted message with helper function:
+let decrypted = try! encryptedBase64.decryptBase64ToString(AES(key: "secret0key000000", iv: "0123456789012345"))
 ```
 
 ...under the hood, this is [UInt8] converted to NSData converted to Base64 string representation:
 
 ```swift
-let encryptedBytes: [UInt8] = try "my secret string".encrypt(AES(key: "secret0key000000", iv: "0123456789012345")
+let encryptedBytes: [UInt8] = try! "my secret string".encrypt(AES(key: "secret0key000000", iv: "0123456789012345"))
 
 let base64 = NSData(bytes: encryptedBytes).base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
 ```
@@ -228,8 +267,8 @@ let key: [UInt8] = [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
 let iv: [UInt8] = AES.randomIV(AES.blockSize)
 
 do {
-    let encrypted: [UInt8] = try AES(key: key, iv: iv, blockMode: .CBC).encrypt(input, padding: PKCS7())
-    let decrypted: [UInt8] = try AES(key: key, iv: iv, blockMode: .CBC).decrypt(input, padding: PKCS7())
+    let encrypted: [UInt8] = try AES(key: key, iv: iv, blockMode: .CBC, padding: PKCS7()).encrypt(input)
+    let decrypted: [UInt8] = try AES(key: key, iv: iv, blockMode: .CBC, padding: PKCS7()).decrypt(encrypted)
 } catch AES.Error.BlockSizeExceeded {
     // block size exceeded
 } catch {
@@ -241,7 +280,7 @@ AES without data padding
 
 ```swift
 let input: [UInt8] = [0,1,2,3,4,5,6,7,8,9]
-let encrypted: [UInt8] = try! AES(key: "secret0key000000", iv:"0123456789012345", blockMode: .CBC).encrypt(input)
+let encrypted: [UInt8] = try! AES(key: "secret0key000000", iv:"0123456789012345", blockMode: .CBC, padding: NoPadding()).encrypt(input)
 ```
 
 Using extensions
@@ -252,26 +291,10 @@ let encrypted: NSData = try! plain.encrypt(ChaCha20(key: key, iv: iv))
 let decrypted: NSData = try! encrypted.decrypt(ChaCha20(key: key, iv: iv))
 // plain == decrypted
 ```
-	
-Message authenticators
-
-```swift
-// Calculate Message Authentication Code (MAC) for message
-let mac: [UInt8] = try! Authenticator.Poly1305(key: key).authenticate(input)
-```
-
-#####Conversion between NSData and [UInt8]
-
-For you convenience CryptoSwift provide two function to easily convert array of bytes to NSData and other way around:
-
-```swift
-let data: NSData = NSData(bytes: [0x01, 0x02, 0x03])
-let bytes:[UInt8] = data.arrayOfBytes()
-```
 
 ##Author
 
-Cryptoswift is owned and maintained by Marcin Krzyżanowski. You can follow me on Twitter at [@krzyzanowskim](http://twitter.com/krzyzanowskim) for project updates and releases.
+CryptoSwift is owned and maintained by Marcin Krzyżanowski. You can follow me on Twitter at [@krzyzanowskim](http://twitter.com/krzyzanowskim) for project updates and releases.
 
 [Marcin Krzyżanowski](http://www.krzyzanowskim.com)
 
