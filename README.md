@@ -1,5 +1,5 @@
 # TelenorConnectIosHelloWorld
-Hello world example for Telenor Connect iOS SDK
+Hello world example for [Telenor Connect iOS SDK](https://github.com/telenordigital/connect-ios-sdk)
 
 ## Install and run
 
