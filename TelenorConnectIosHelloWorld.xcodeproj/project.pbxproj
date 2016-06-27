@@ -14,6 +14,7 @@
 		5C6D570C1C91B2FF001A564E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D570A1C91B2FF001A564E /* LaunchScreen.storyboard */; };
 		5C6D57141C92E896001A564E /* SignedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D57131C92E896001A564E /* SignedInViewController.swift */; };
 		7DC218B0E52709CCBC114DC0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7296F44B3C2C4940BF20C6E5 /* Pods.framework */; };
+		E75703217DD52B571AFBB810 /* Pods_TelenorConnectIosHelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D809B7315DF15820086C1AF3 /* Pods_TelenorConnectIosHelloWorld.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,10 @@
 		5C6D57131C92E896001A564E /* SignedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedInViewController.swift; sourceTree = "<group>"; };
 		651BCEA85B82C9AD36B607C6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7296F44B3C2C4940BF20C6E5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC7D3D2AAB6AFC0FDD54AF5 /* Pods-TelenorConnectIosHelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelenorConnectIosHelloWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		C57F6B2AC602F212C6535778 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D78EFA42E7A2B22B2776C047 /* Pods-TelenorConnectIosHelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelenorConnectIosHelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld.release.xcconfig"; sourceTree = "<group>"; };
+		D809B7315DF15820086C1AF3 /* Pods_TelenorConnectIosHelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelenorConnectIosHelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DC218B0E52709CCBC114DC0 /* Pods.framework in Frameworks */,
+				E75703217DD52B571AFBB810 /* Pods_TelenorConnectIosHelloWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				7296F44B3C2C4940BF20C6E5 /* Pods.framework */,
+				D809B7315DF15820086C1AF3 /* Pods_TelenorConnectIosHelloWorld.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,6 +93,8 @@
 			children = (
 				651BCEA85B82C9AD36B607C6 /* Pods.debug.xcconfig */,
 				C57F6B2AC602F212C6535778 /* Pods.release.xcconfig */,
+				9CC7D3D2AAB6AFC0FDD54AF5 /* Pods-TelenorConnectIosHelloWorld.debug.xcconfig */,
+				D78EFA42E7A2B22B2776C047 /* Pods-TelenorConnectIosHelloWorld.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -98,12 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C6D57101C91B2FF001A564E /* Build configuration list for PBXNativeTarget "TelenorConnectIosHelloWorld" */;
 			buildPhases = (
-				C3418C5607863478893A0D00 /* Check Pods Manifest.lock */,
+				C3418C5607863478893A0D00 /* [CP] Check Pods Manifest.lock */,
 				5C6D56FA1C91B2FF001A564E /* Sources */,
 				5C6D56FB1C91B2FF001A564E /* Frameworks */,
 				5C6D56FC1C91B2FF001A564E /* Resources */,
-				81CB15ACDC14B93A44D69388 /* Embed Pods Frameworks */,
-				D4F5D52FA2601225B9AC1524 /* Copy Pods Resources */,
+				81CB15ACDC14B93A44D69388 /* [CP] Embed Pods Frameworks */,
+				D4F5D52FA2601225B9AC1524 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,29 +169,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		81CB15ACDC14B93A44D69388 /* Embed Pods Frameworks */ = {
+		81CB15ACDC14B93A44D69388 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C3418C5607863478893A0D00 /* Check Pods Manifest.lock */ = {
+		C3418C5607863478893A0D00 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,19 +199,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D4F5D52FA2601225B9AC1524 /* Copy Pods Resources */ = {
+		D4F5D52FA2601225B9AC1524 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -326,7 +334,7 @@
 		};
 		5C6D57111C91B2FF001A564E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 651BCEA85B82C9AD36B607C6 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 9CC7D3D2AAB6AFC0FDD54AF5 /* Pods-TelenorConnectIosHelloWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -341,7 +349,7 @@
 		};
 		5C6D57121C91B2FF001A564E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C57F6B2AC602F212C6535778 /* Pods.release.xcconfig */;
+			baseConfigurationReference = D78EFA42E7A2B22B2776C047 /* Pods-TelenorConnectIosHelloWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

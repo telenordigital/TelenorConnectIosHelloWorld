@@ -10,7 +10,7 @@
     "tag": "0.5.1"
   },
   "platforms": {
-    "ios": 8.0
+    "ios": "8.0"
   },
   "source_files": "AeroGearHttp/*.{swift}",
   "requires_arc": true
