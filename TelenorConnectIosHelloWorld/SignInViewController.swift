@@ -13,7 +13,8 @@ import TDConnectIosSdk
 
 class SignInViewController: UIViewController {
     
-    var userInfo: AnyObject?
+    var hasAppeared = false
+    var performingingSegue = false
     var oauth2Module: OAuth2Module?
     let config = TelenorConnectConfig(clientId: "telenordigital-connectexample-ios",
         redirectUrl: "telenordigital-connectexample-ios://oauth2callback",
@@ -28,12 +29,20 @@ class SignInViewController: UIViewController {
         print("oauth2Module!.isAuthorized()=\(oauth2Module!.isAuthorized())")
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        hasAppeared = false
+        performingingSegue = false
+    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         // Note: The method will be called after (Safari) WebView completes logging in the user
-        if oauth2Module!.isAuthorized() {
+        if oauth2Module!.isAuthorized() && !performingingSegue {
+            performingingSegue = true
             self.performSegueWithIdentifier("signedIn", sender: nil)
         }
+        hasAppeared = true
     }
 
     @IBAction func signInPressed(sender: AnyObject) {
@@ -46,21 +55,23 @@ class SignInViewController: UIViewController {
             return
         }
         
-        oauth2Module.login {(accessToken: AnyObject?, userInfo: OpenIDClaim?, error: NSError?) -> Void in
+        oauth2Module.requestAccess {(accessToken: AnyObject?, error: NSError?) -> Void in
             guard let accessToken = accessToken else {
                 print("error=\(error)")
                 return
             }
             
             print("accessToken=\(accessToken)")
-            self.userInfo = userInfo
+            if self.hasAppeared && !self.performingingSegue {
+                self.performingingSegue = true
+                self.performSegueWithIdentifier("signedIn", sender: nil)
+            }
         }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "signedIn") {
             let signedInController = segue.destinationViewController as! SignedInViewController
-            signedInController.userInfo = userInfo
             signedInController.oauth2Module = oauth2Module
         }
     }
