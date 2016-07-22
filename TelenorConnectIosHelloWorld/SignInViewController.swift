@@ -20,7 +20,8 @@ class SignInViewController: UIViewController {
         redirectUrl: "telenordigital-connectexample-ios://oauth2callback",
         useStaging: true,
         scopes: ["profile", "openid", "email"],
-        accountId: "telenor-connect-ios-hello-world")
+        accountId: "telenor-connect-ios-hello-world",
+        isPublicClient: false)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,17 +56,17 @@ class SignInViewController: UIViewController {
             return
         }
         
-        oauth2Module.requestAccess {(accessToken: AnyObject?, error: NSError?) -> Void in
-            guard let accessToken = accessToken else {
+        oauth2Module.requestAuthorizationCode {(authorizationCode: AnyObject?, error: NSError?) -> Void in
+            guard let authorizationCode = authorizationCode else {
                 print("error=\(error)")
                 return
             }
             
-            print("accessToken=\(accessToken)")
-            if self.hasAppeared && !self.performingingSegue {
-                self.performingingSegue = true
-                self.performSegueWithIdentifier("signedIn", sender: nil)
-            }
+            print("authorizationCode=\(authorizationCode)")
+            // if self.hasAppeared && !self.performingingSegue {
+            //     self.performingingSegue = true
+            //     self.performSegueWithIdentifier("signedIn", sender: nil)
+            // }
         }
     }
     
