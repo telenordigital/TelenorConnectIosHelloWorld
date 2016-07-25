@@ -14,4 +14,4 @@ In other words:
 3. Build and run.
 
 ## Sigin example for Telenor Connect
-See [SignInViewController.swift](https://github.com/telenordigital/TelenorConnectIosHelloWorld/blob/master/TelenorConnectIosHelloWorld/SignInViewController.swift).
+See [SignInViewController.swift](TelenorConnectIosHelloWorld/SignInViewController.swift).
