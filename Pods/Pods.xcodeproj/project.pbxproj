@@ -9,19 +9,16 @@
 /* Begin PBXBuildFile section */
 		006D42B96A79F67A56DB1B6571BDEF51 /* SecureBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1752216D3BDE335F573D9B058DA82C73 /* SecureBytes.swift */; };
 		01FCB52BE197C869A2CAD0E0848727C5 /* Rabbit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7388F10ACD6BD8F74352166AB49724D4 /* Rabbit+Foundation.swift */; };
-		02759BEAC2E7758841938E61E0AC514B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD72B298C5F844CDE6F3E9073CB98B /* Foundation.framework */; };
 		03E0E7AB0E071CB3C070683831C6DEE0 /* FacebookOAuth2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA45E1034481E5401A9EDB8434887E41 /* FacebookOAuth2Module.swift */; };
 		05E2EED01694D73B34FF19B22E518CEE /* JWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9058C80A375D670360509F5D60EBBB7 /* JWT.framework */; };
 		08C1938DA5D6B58DF0D7D48864881F83 /* CipherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B501193E4C114CE3CF13B902BBAF7A /* CipherProtocol.swift */; };
-		08DF92C398441AD329AE3D30BD424F0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD72B298C5F844CDE6F3E9073CB98B /* Foundation.framework */; };
-		09F8E39D750DAC30E313318C30788B2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD72B298C5F844CDE6F3E9073CB98B /* Foundation.framework */; };
 		0D4362129DDF3D5E046EA4944EF95E65 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749091FBF827F87301AA87A1A6EE28C8 /* Operators.swift */; };
 		16DC82634C36DB359DC8DE2C206D61F5 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B9CCFFFFBB34D6EE594886D3601B12 /* CryptoSwift.framework */; };
+		174F308DDF5D0E9529D84C0FAE6EC4A1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A2287FDAB6A323E73F2328BA53DAED /* Security.framework */; };
 		17EE644FB2C5AD7900E6BE2B02F201D3 /* IdTokenValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C4F59262438343200FCF6E9324524A /* IdTokenValidator.swift */; };
 		1BBAD83E997CF1902396FCEDBBF8037D /* Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E632B3BCF48E40B4A9349FC93FB496 /* Decode.swift */; };
 		1C5CA0323B22B50689F6252B44A93D80 /* JsonResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24589403DFB4B952ACF0A28459942A02 /* JsonResponseSerializer.swift */; };
 		1DCC299F1DB74B1D602947C6E35EBED9 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77421FBD65C9959313522825100CB7B8 /* IntExtension.swift */; };
-		20900102117B41A4E9CAF9B3D9C63F01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD72B298C5F844CDE6F3E9073CB98B /* Foundation.framework */; };
 		26867186C3E7F214B3E92BE36F0F8299 /* TDConnectIosSdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C501D990BD00C448470270AB4501622 /* TDConnectIosSdk-dummy.m */; };
 		27B9305978AB08232BD1BAD3E5CF8FBB /* AuthzModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD171BF6F37777AFA2BB5189A2499F3 /* AuthzModule.swift */; };
 		287E36BCFFA0D8B4EE0003994BA08B4D /* TDConnectIosSdk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53E791C6606ECF9631997EDBA07AE775 /* TDConnectIosSdk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +26,7 @@
 		2FF15053DFC675DD40706603E5396660 /* UntrustedMemoryOAuth2Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61EBB423536F2E2CCCA834ACE5F81E1 /* UntrustedMemoryOAuth2Session.swift */; };
 		34BFAC18A269D413F0C10F40601D4095 /* AeroGearHttp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 757CB553386A85269C47F8A0811F4402 /* AeroGearHttp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3611F806866324FB36D4174495473D85 /* Pods-TelenorConnectIosHelloWorld-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D31BA2C2118844338BE435C2758F4B /* Pods-TelenorConnectIosHelloWorld-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39F0CEB9E933AFAC8C7A1A321F42E913 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916869A433D9543CAF71FA71A306B7C6 /* Foundation.framework */; };
 		3C89A832DA30261724CD29DE37959A4D /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B7B9ACF0955160B31423380F76ED94 /* DateUtils.swift */; };
 		3CF89143D21FCE1C722D554B88E6FD62 /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71BA3D4C6942FAB62FC1B7AAC311A3 /* ChaCha20.swift */; };
 		3EF942D418D77B3B96028FE998C864AD /* OAuth2WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5810E57814D5332EFDF060DD1A691BF3 /* OAuth2WebViewController.swift */; };
@@ -36,11 +34,12 @@
 		414604A8FF3FB72FBF340519531FEEC3 /* Multiplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA175643DE322D78034D50A7892A1A7 /* Multiplatform.swift */; };
 		41B28B53451B9591805F973AB4E90807 /* CipherBlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483CE1E853C479B9C19237BAA4E51F0 /* CipherBlockMode.swift */; };
 		446623246B4A0179561843187D46AE99 /* IntegerConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F53571171537025DDA03DBA37A92C38 /* IntegerConvertible.swift */; };
-		466DFAC2737435A1455B5BC5DCDFAD20 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62729E0B4104B83975101457031AF5D /* Security.framework */; };
 		490CBB4DB25D195443D8F31D579BD28D /* OFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AB428D01BBB4D2374D2A8BC2D1679A /* OFB.swift */; };
 		4A33BBDADA9FD85AFC561BEB97168F83 /* CSArrayType+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C7FB07D780A58E25496F7A6445A543 /* CSArrayType+Foundation.swift */; };
+		4BBF7DC6AF3D69B9E1D31F989CBB0264 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916869A433D9543CAF71FA71A306B7C6 /* Foundation.framework */; };
 		4F4DD7BB7B0F407DB328753542B70C11 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B9CCFFFFBB34D6EE594886D3601B12 /* CryptoSwift.framework */; };
 		53B7502B7F416C87F06616AAEEBFB99F /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2F8253DDD1B10CFD01EBA0C052F6F /* PBKDF2.swift */; };
+		567469D16CD40EBD03BE37247C20F0DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916869A433D9543CAF71FA71A306B7C6 /* Foundation.framework */; };
 		57A87932F040001DA12B681C3A656E9F /* BlockModeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB7C29C3AF71D484F8876692643A0A /* BlockModeOptions.swift */; };
 		57ED9F0ADD910FA52C306C2B4CB20738 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6445160BF76EB72C5403D04C8AA93AC4 /* String+Extension.swift */; };
 		59AE43A1A7830FB7FD437AE6EBCFDCA5 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDAACC080DF2FDE859AA377C32D84CF /* Base64.swift */; };
@@ -55,6 +54,7 @@
 		75CA0880B0F24B00A4868D1166B0EAA3 /* ECB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3493667DC41A7C32EEEAE5D4E34C623 /* ECB.swift */; };
 		76C014EF3D0886098F511FB736EE45AA /* ChaCha20+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B670CEF29C8B28736CA6F403139976 /* ChaCha20+Foundation.swift */; };
 		76C0A90CA2F87E9F5F75D86627BD5831 /* Pods-TelenorConnectIosHelloWorld-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 235E7D062607CE01D51CE3DF4C61C825 /* Pods-TelenorConnectIosHelloWorld-dummy.m */; };
+		79BD3998B633AD83B15F3A2EA4C3DD75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916869A433D9543CAF71FA71A306B7C6 /* Foundation.framework */; };
 		7E94320CC0F0DFDF94C3420AAC973C74 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47610BA48991FECBC108B6C0CFBB15E8 /* HMAC.swift */; };
 		8015C76DE8B09C84C4F402CA38728A87 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA14A5AC7BF2C562AE7138E848F8151 /* SHA1.swift */; };
 		859E2DE05B3E3D919CABCA75340E10F7 /* TrustedPersistantOAuth2Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474492029AA70CF70320F0A61E81440 /* TrustedPersistantOAuth2Session.swift */; };
@@ -90,7 +90,6 @@
 		C3EE5FD470BF4FD80D834166E6C5E8EA /* HttpRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA483F7DAD2355C0BF0819D6E1C0DF7 /* HttpRequestSerializer.swift */; };
 		C5B8E98BD2A28B6A3A3552521213C5A0 /* PCBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF64A3B1A7B3E0EB70D11DB08F86D881 /* PCBC.swift */; };
 		CA5BC4C53BF1640332909297D3F6BB57 /* JSONWebToken-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50DDEC11768D70F7668D7B13307844E5 /* JSONWebToken-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB664018EC93818E31410DB4B70AA07C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD72B298C5F844CDE6F3E9073CB98B /* Foundation.framework */; };
 		CFBFD1949A464FA701704CB507D5074D /* MultiPartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71CE60D007A6BC7A5DE93DC0714498 /* MultiPartData.swift */; };
 		D26784E8F871F07F1647D8A26C7D184D /* BlockCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C48C0C03EA09E6EF6DD24B89FFBECA /* BlockCipher.swift */; };
 		D4339C0A8682C7ED413AC3B783AEDD71 /* CryptoSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8109A5272D612FEF2AC3E8B03D13659 /* CryptoSwift-dummy.m */; };
@@ -99,6 +98,7 @@
 		E317AD073741FDDBBF77D9D970D236B5 /* CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA69BC67E0FF284B15B43055C96227 /* CBC.swift */; };
 		E327271A07075056388C3AF118F00DBB /* Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1573F41BFD01A2BB6F05D3B190AE70 /* Poly1305.swift */; };
 		E7783DA43E66A3CD931B178E31771E1C /* ResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4310772B2459AE9CEEBB911B37AB988 /* ResponseSerializer.swift */; };
+		E8B79B17F57B9338D90825ED0FA0EA84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916869A433D9543CAF71FA71A306B7C6 /* Foundation.framework */; };
 		E94393E2BBDAA8E8BBFDF20A0E9F8512 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD0665FBA4053D1B692EFF31E574F7 /* Http.swift */; };
 		EAC4CC44502358A00DA0AC03959A487F /* UInt64Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2968D2FBFD9764823F3AE2246D71119D /* UInt64Extension.swift */; };
 		ED4B859D28626B3B1E74BF97A7D3F4B3 /* AeroGearHttp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F3C547CE57A7C6E573572112BEED9D /* AeroGearHttp-dummy.m */; };
@@ -196,6 +196,7 @@
 		36B2EA5E676A60F63EDF9830B9340536 /* Utils+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utils+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Utils+Foundation.swift"; sourceTree = "<group>"; };
 		36C5AC0CBF8D61B59AF955B95FE4CA85 /* TDConnectIosSdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TDConnectIosSdk.modulemap; sourceTree = "<group>"; };
 		37C4F59262438343200FCF6E9324524A /* IdTokenValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdTokenValidator.swift; path = TDConnectIosSdk/IdTokenValidator.swift; sourceTree = "<group>"; };
+		42A2287FDAB6A323E73F2328BA53DAED /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		47610BA48991FECBC108B6C0CFBB15E8 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/CryptoSwift/HMAC.swift; sourceTree = "<group>"; };
 		4872E6BEFBFBD0704D0708EF99EB8B91 /* Pods-TelenorConnectIosHelloWorld-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TelenorConnectIosHelloWorld-frameworks.sh"; sourceTree = "<group>"; };
 		4CA483F7DAD2355C0BF0819D6E1C0DF7 /* HttpRequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpRequestSerializer.swift; path = AeroGearHttp/HttpRequestSerializer.swift; sourceTree = "<group>"; };
@@ -240,6 +241,7 @@
 		8CA14A5AC7BF2C562AE7138E848F8151 /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
 		8D727E491B899A4F533B20651BCE2C95 /* AeroGearHttp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1C736122C07A3BF3DC864BEBEDAFFA /* CSArrayType+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSArrayType+Extensions.swift"; path = "Sources/CryptoSwift/CSArrayType+Extensions.swift"; sourceTree = "<group>"; };
+		916869A433D9543CAF71FA71A306B7C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		92F23255A32E5002CCA0B1D813FED46D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9642DC42B2AC3D4D3BF50539B45ED531 /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
@@ -257,7 +259,6 @@
 		AD71CE60D007A6BC7A5DE93DC0714498 /* MultiPartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiPartData.swift; path = AeroGearHttp/MultiPartData.swift; sourceTree = "<group>"; };
 		AE49CD29256305E235AB30D97A4D2590 /* AeroGearHttp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AeroGearHttp.xcconfig; sourceTree = "<group>"; };
 		AEDAACC080DF2FDE859AA377C32D84CF /* Base64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base64.swift; path = Sources/Base64.swift; sourceTree = "<group>"; };
-		B2CD72B298C5F844CDE6F3E9073CB98B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B492D92ECFCEB740ABFDB6C2775DAD0A /* NSData+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSData+Extension.swift"; path = "Sources/CryptoSwift/Foundation/NSData+Extension.swift"; sourceTree = "<group>"; };
 		C33441FEF55D62A15D66C7D475050464 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = AeroGearHttp/Utils.swift; sourceTree = "<group>"; };
 		C61EBB423536F2E2CCCA834ACE5F81E1 /* UntrustedMemoryOAuth2Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UntrustedMemoryOAuth2Session.swift; path = TDConnectIosSdk/UntrustedMemoryOAuth2Session.swift; sourceTree = "<group>"; };
@@ -273,7 +274,6 @@
 		DB71BA3D4C6942FAB62FC1B7AAC311A3 /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = Sources/CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
 		E0C7FB07D780A58E25496F7A6445A543 /* CSArrayType+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSArrayType+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/CSArrayType+Foundation.swift"; sourceTree = "<group>"; };
 		E19D0AF4577CBFDAFD59C86C6D117EC4 /* String+FoundationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+FoundationExtension.swift"; path = "Sources/CryptoSwift/Foundation/String+FoundationExtension.swift"; sourceTree = "<group>"; };
-		E62729E0B4104B83975101457031AF5D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		E7577C4266C5807A3B79FC5DD6BBDA6F /* JSONWebToken-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSONWebToken-dummy.m"; sourceTree = "<group>"; };
 		E9290EF632A051C9102E7CE8A99BA603 /* Pods-TelenorConnectIosHelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelenorConnectIosHelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		EA1573F41BFD01A2BB6F05D3B190AE70 /* Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poly1305.swift; path = Sources/CryptoSwift/Poly1305.swift; sourceTree = "<group>"; };
@@ -299,7 +299,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09F8E39D750DAC30E313318C30788B2A /* Foundation.framework in Frameworks */,
+				39F0CEB9E933AFAC8C7A1A321F42E913 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +307,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08DF92C398441AD329AE3D30BD424F0E /* Foundation.framework in Frameworks */,
+				4BBF7DC6AF3D69B9E1D31F989CBB0264 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +315,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20900102117B41A4E9CAF9B3D9C63F01 /* Foundation.framework in Frameworks */,
+				79BD3998B633AD83B15F3A2EA4C3DD75 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,9 +325,9 @@
 			files = (
 				B3515F2B0BC5461668F7D40AFE52E5ED /* AeroGearHttp.framework in Frameworks */,
 				16DC82634C36DB359DC8DE2C206D61F5 /* CryptoSwift.framework in Frameworks */,
-				02759BEAC2E7758841938E61E0AC514B /* Foundation.framework in Frameworks */,
+				567469D16CD40EBD03BE37247C20F0DE /* Foundation.framework in Frameworks */,
 				05E2EED01694D73B34FF19B22E518CEE /* JWT.framework in Frameworks */,
-				466DFAC2737435A1455B5BC5DCDFAD20 /* Security.framework in Frameworks */,
+				174F308DDF5D0E9529D84C0FAE6EC4A1 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F4DD7BB7B0F407DB328753542B70C11 /* CryptoSwift.framework in Frameworks */,
-				CB664018EC93818E31410DB4B70AA07C /* Foundation.framework in Frameworks */,
+				E8B79B17F57B9338D90825ED0FA0EA84 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +395,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TDConnectIosSdk";
+			sourceTree = "<group>";
+		};
+		1D61D436C4134D5D98803A5E84711BB6 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				916869A433D9543CAF71FA71A306B7C6 /* Foundation.framework */,
+				42A2287FDAB6A323E73F2328BA53DAED /* Security.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		23F7A55B72B9BC5EB8A1D9E79EB2150F /* Targets Support Files */ = {
@@ -498,18 +507,9 @@
 				8D727E491B899A4F533B20651BCE2C95 /* AeroGearHttp.framework */,
 				A0B9CCFFFFBB34D6EE594886D3601B12 /* CryptoSwift.framework */,
 				F9058C80A375D670360509F5D60EBBB7 /* JWT.framework */,
-				7F6198C6C1F920423F7A548617A51988 /* iOS */,
+				1D61D436C4134D5D98803A5E84711BB6 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7F6198C6C1F920423F7A548617A51988 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				B2CD72B298C5F844CDE6F3E9073CB98B /* Foundation.framework */,
-				E62729E0B4104B83975101457031AF5D /* Security.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		B1B025B722A7D5AA54C8EC5DBA0358BA /* Pods-TelenorConnectIosHelloWorld */ = {
@@ -737,11 +737,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					AD9D291F8CA163A4C777D9BE0CEB3122 = {
-						LastSwiftMigration = 0800;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -938,74 +933,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0C207DBFD10490D4C64AB654F6E4078A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 206FA684087985C6B0FF5193196D760C /* CryptoSwift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CryptoSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = CryptoSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1F0D229BB20F1C04C95664B11CBF52AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FD3437ECAE2472C0CB1180E724FED85 /* TDConnectIosSdk.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TDConnectIosSdk/TDConnectIosSdk-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TDConnectIosSdk/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TDConnectIosSdk/TDConnectIosSdk.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TDConnectIosSdk;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		221468E415450BB299514DCF92B55BC7 /* Debug */ = {
+		03B7C8BACFBDF258C2E6BC4081239A7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE49CD29256305E235AB30D97A4D2590 /* AeroGearHttp.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1018,12 +954,79 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AeroGearHttp/AeroGearHttp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = AeroGearHttp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0617CC173908299F9E45C35F80BDF396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 206FA684087985C6B0FF5193196D760C /* CryptoSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CryptoSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CryptoSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		16123CE9C0CEF5BF08D3847D32105DCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 846956F595C3663BC7BCA73E2E5E1931 /* Pods-TelenorConnectIosHelloWorld.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TelenorConnectIosHelloWorld/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TelenorConnectIosHelloWorld;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1070,11 +1073,80 @@
 			};
 			name = Release;
 		};
-		24DF72F6C1C070020C27F71C43F83A9F /* Release */ = {
+		2A46618CAE65DA5FACFCE66D06C2BA4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD3437ECAE2472C0CB1180E724FED85 /* TDConnectIosSdk.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TDConnectIosSdk/TDConnectIosSdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TDConnectIosSdk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TDConnectIosSdk/TDConnectIosSdk.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TDConnectIosSdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		466F260B18985850B9FF6B5A243AAA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9290EF632A051C9102E7CE8A99BA603 /* Pods-TelenorConnectIosHelloWorld.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TelenorConnectIosHelloWorld/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TelenorConnectIosHelloWorld;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		798D71AAD4FB7F804D698F87730A965D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DEC3AB7D954EF44EF9B5D1267B3B1DC /* JSONWebToken.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -1100,46 +1172,13 @@
 			};
 			name = Release;
 		};
-		7AC01EEF9F9D1E7E8C1E5E4A779086D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 846956F595C3663BC7BCA73E2E5E1931 /* Pods-TelenorConnectIosHelloWorld.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TelenorConnectIosHelloWorld/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TelenorConnectIosHelloWorld;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9A81F5D9C238C65BB99D412271011253 /* Debug */ = {
+		A92FC5D85722704AE2BE6063DA56C965 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DEC3AB7D954EF44EF9B5D1267B3B1DC /* JSONWebToken.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -1166,11 +1205,46 @@
 			};
 			name = Debug;
 		};
-		A4BF4963ABC444ABDCB36965EBAEBEBC /* Debug */ = {
+		BFABB024F44CDFA47393282A6098CC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE49CD29256305E235AB30D97A4D2590 /* AeroGearHttp.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AeroGearHttp/AeroGearHttp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AeroGearHttp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AeroGearHttp/AeroGearHttp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AeroGearHttp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C237A27F84EB00D278A653F060E4FA5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1FD3437ECAE2472C0CB1180E724FED85 /* TDConnectIosSdk.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -1196,70 +1270,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		B094E46E5932DCDF539011BCCD27DD4A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9290EF632A051C9102E7CE8A99BA603 /* Pods-TelenorConnectIosHelloWorld.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TelenorConnectIosHelloWorld/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TelenorConnectIosHelloWorld;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B3AB10F62F4F9CD70E4929F482CD3E62 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 206FA684087985C6B0FF5193196D760C /* CryptoSwift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CryptoSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CryptoSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		EB10C108E296DEB376DFA4B409A568F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1305,35 +1315,38 @@
 			};
 			name = Debug;
 		};
-		F3E569B837262A6E13565C738EE4EDA0 /* Release */ = {
+		F8D7844E9EAFC6B2C8CC11741424FAB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE49CD29256305E235AB30D97A4D2590 /* AeroGearHttp.xcconfig */;
+			baseConfigurationReference = 206FA684087985C6B0FF5193196D760C /* CryptoSwift.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AeroGearHttp/AeroGearHttp-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AeroGearHttp/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CryptoSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AeroGearHttp/AeroGearHttp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AeroGearHttp;
+				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CryptoSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1341,8 +1354,8 @@
 		0232F450FCDDC145DE399A0FB3050827 /* Build configuration list for PBXNativeTarget "JSONWebToken" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A81F5D9C238C65BB99D412271011253 /* Debug */,
-				24DF72F6C1C070020C27F71C43F83A9F /* Release */,
+				A92FC5D85722704AE2BE6063DA56C965 /* Debug */,
+				798D71AAD4FB7F804D698F87730A965D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1359,8 +1372,8 @@
 		68EDC593B4F9A0F96D53968E11963ADF /* Build configuration list for PBXNativeTarget "Pods-TelenorConnectIosHelloWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AC01EEF9F9D1E7E8C1E5E4A779086D6 /* Debug */,
-				B094E46E5932DCDF539011BCCD27DD4A /* Release */,
+				16123CE9C0CEF5BF08D3847D32105DCB /* Debug */,
+				466F260B18985850B9FF6B5A243AAA82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1368,8 +1381,8 @@
 		80B13B6EAD86ED2D1C36A7A5494AC881 /* Build configuration list for PBXNativeTarget "AeroGearHttp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				221468E415450BB299514DCF92B55BC7 /* Debug */,
-				F3E569B837262A6E13565C738EE4EDA0 /* Release */,
+				BFABB024F44CDFA47393282A6098CC5E /* Debug */,
+				03B7C8BACFBDF258C2E6BC4081239A7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1377,8 +1390,8 @@
 		94E0D3F3995439C8804EED0103E8E680 /* Build configuration list for PBXNativeTarget "CryptoSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C207DBFD10490D4C64AB654F6E4078A /* Debug */,
-				B3AB10F62F4F9CD70E4929F482CD3E62 /* Release */,
+				F8D7844E9EAFC6B2C8CC11741424FAB5 /* Debug */,
+				0617CC173908299F9E45C35F80BDF396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1386,8 +1399,8 @@
 		C8A0C4390CD40DAC19F46411D71D222C /* Build configuration list for PBXNativeTarget "TDConnectIosSdk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4BF4963ABC444ABDCB36965EBAEBEBC /* Debug */,
-				1F0D229BB20F1C04C95664B11CBF52AA /* Release */,
+				C237A27F84EB00D278A653F060E4FA5A /* Debug */,
+				2A46618CAE65DA5FACFCE66D06C2BA4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

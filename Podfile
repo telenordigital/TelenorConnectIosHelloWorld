@@ -6,7 +6,7 @@ target 'TelenorConnectIosHelloWorld' do
   use_frameworks!
 
   # Pods for TelenorConnectIosHelloWorld
-  pod 'AeroGearHttp', :git => 'https://github.com/aerogear/aerogear-ios-http'
+  pod 'AeroGearHttp'
   pod 'TDConnectIosSdk', :git => 'https://github.com/telenordigital/connect-ios-sdk'
 
 end
