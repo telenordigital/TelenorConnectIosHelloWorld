@@ -1,13 +1,13 @@
 {
   "name": "TDConnectIosSdk",
-  "version": "0.8.1",
+  "version": "1.0.0",
   "summary": "OAuth2 client library based on aerogear-ios-http",
-  "homepage": "https://github.com/telenordigital/aerogear-ios-oauth2",
+  "homepage": "https://github.com/telenordigital/connect-ios-sdk",
   "license": "Apache License, Version 2.0",
   "authors": "Telenor Digital",
   "source": {
     "git": "https://github.com/telenordigital/connect-ios-sdk.git",
-    "tag": "0.8.1"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -20,7 +20,7 @@
 
     ],
     "JSONWebToken": [
-      "1.5.0"
+
     ]
   }
 }

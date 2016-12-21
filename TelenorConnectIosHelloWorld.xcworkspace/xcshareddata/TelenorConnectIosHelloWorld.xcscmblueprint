@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7B8E9154342FC2291D5B47B1E0FD95030549A044",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0C8AF9E7E5AFF561C6C4CF85A7C8ACC3A853551C" : 9223372036854775807,
+    "7B8E9154342FC2291D5B47B1E0FD95030549A044" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0343AD87-75DE-46B2-9FC1-315B5CABBE8E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0C8AF9E7E5AFF561C6C4CF85A7C8ACC3A853551C" : "connect-ios-sdk\/",
+    "7B8E9154342FC2291D5B47B1E0FD95030549A044" : "TelenorConnectIosHelloWorld\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TelenorConnectIosHelloWorld",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TelenorConnectIosHelloWorld.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:telenordigital\/connect-ios-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0C8AF9E7E5AFF561C6C4CF85A7C8ACC3A853551C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:telenordigital\/TelenorConnectIosHelloWorld.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B8E9154342FC2291D5B47B1E0FD95030549A044"
+    }
+  ]
+}

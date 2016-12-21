@@ -23,14 +23,14 @@ class SignedInViewController: UIViewController {
         
         // We can get information about the user from the SignInViewController…
         if let infoText = userInfo {
-            signedInInfo.text = String(infoText)
+            signedInInfo.text = String(describing: infoText)
             return
         }
         
         // The ID token payload…
         do {
             let idTokenPayload = try oauth2Module?.getIdTokenPayload()
-            signedInInfo.text = String(idTokenPayload)
+            signedInInfo.text = String(describing: idTokenPayload)
             return
         } catch {
             print("Failed to getIdTokenPayload: \(error)")
@@ -45,23 +45,23 @@ class SignedInViewController: UIViewController {
             return
         }
         
-        http.request(.GET, path: userInfoEndpoint, completionHandler: { (response: AnyObject?, error: NSError?) -> Void in
+        http.request(method: .get, path: userInfoEndpoint, completionHandler: { (response: AnyObject?, error: NSError?) -> Void in
             if let error = error {
                 print("Got error when fetching userinfo. error=\(error)")
                 return
             }
             
-            self.signedInInfo.text = String(response)
-        })
+            self.signedInInfo.text = String(describing: response)
+        } as! CompletionBlock)
     }
     
-    @IBAction func signOut(sender: AnyObject) {
+    @IBAction func signOut(_ sender: AnyObject) {
         print("Signing out…")
-        oauth2Module?.revokeAccess({ (response: AnyObject?, error: NSError?) -> Void in
+        oauth2Module?.revokeAccess(completionHandler: { (response: AnyObject?, error: NSError?) -> Void in
             print("response=\(response)")
             print("error=\(error)")
 
-            self.dismissViewControllerAnimated(true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
         })
     }
     

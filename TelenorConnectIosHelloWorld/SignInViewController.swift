@@ -25,33 +25,33 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        oauth2Module = AccountManager.getAccountByConfig(config) ?? AccountManager.addAccount(self.config, moduleClass: TelenorConnectOAuth2Module.self)
+        oauth2Module = AccountManager.getAccountBy(config: config) ?? AccountManager.addAccountWith(config: self.config, moduleClass: TelenorConnectOAuth2Module.self)
         print("oauth2Module!.isAuthorized()=\(oauth2Module!.isAuthorized())")
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         hasAppeared = false
         performingingSegue = false
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // Note: The method will be called after (Safari) WebView completes logging in the user
         if oauth2Module!.isAuthorized() && !performingingSegue {
             performingingSegue = true
-            self.performSegueWithIdentifier("signedIn", sender: nil)
+            self.performSegue(withIdentifier: "signedIn", sender: nil)
         }
         hasAppeared = true
     }
 
-    @IBAction func signInPressed(sender: AnyObject) {
+    @IBAction func signInPressed(_ sender: AnyObject) {
         guard let oauth2Module = self.oauth2Module else {
             return
         }
         
         if oauth2Module.isAuthorized() {
-            self.performSegueWithIdentifier("signedIn", sender: nil)
+            self.performSegue(withIdentifier: "signedIn", sender: nil)
             return
         }
         
@@ -64,14 +64,14 @@ class SignInViewController: UIViewController {
             print("accessToken=\(accessToken)")
             if self.hasAppeared && !self.performingingSegue {
                 self.performingingSegue = true
-                self.performSegueWithIdentifier("signedIn", sender: nil)
+                self.performSegue(withIdentifier: "signedIn", sender: nil)
             }
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "signedIn") {
-            let signedInController = segue.destinationViewController as! SignedInViewController
+            let signedInController = segue.destination as! SignedInViewController
             signedInController.oauth2Module = oauth2Module
         }
     }

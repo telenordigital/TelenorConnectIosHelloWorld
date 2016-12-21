@@ -135,7 +135,7 @@
 					5C6D56FD1C91B2FF001A564E = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = M4Q75B4WS4;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0820;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -359,7 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.telenor.connect.TelenorConnectIosHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -379,7 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.telenor.connect.TelenorConnectIosHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
