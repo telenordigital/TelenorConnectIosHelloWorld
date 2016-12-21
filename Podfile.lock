@@ -9,23 +9,14 @@ PODS:
 
 DEPENDENCIES:
   - AeroGearHttp
-  - TDConnectIosSdk (from `https://github.com/telenordigital/connect-ios-sdk`)
-
-EXTERNAL SOURCES:
-  TDConnectIosSdk:
-    :git: https://github.com/telenordigital/connect-ios-sdk
-
-CHECKOUT OPTIONS:
-  TDConnectIosSdk:
-    :commit: 194ed094e3ca6efd2f3de0710134b20d7b2eded9
-    :git: https://github.com/telenordigital/connect-ios-sdk
+  - TDConnectIosSdk
 
 SPEC CHECKSUMS:
   AeroGearHttp: 8c825d4563439f565196f52efe80e15f0055109a
   CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
   JSONWebToken: ca86f02eeb3d1f58ba5197ec2cd53c7de915ecc1
-  TDConnectIosSdk: b41fa201b64e9c88624eb26ea1a8c23f4ebbdf60
+  TDConnectIosSdk: 19969be24d8d2f5d3d29e35a8185d717b8e8db57
 
-PODFILE CHECKSUM: 31adb3ab7fd4d8538cfa1d8ffc005021eb2181a5
+PODFILE CHECKSUM: e06f08049b8c759036ad6ba52f6c695f35cc1e08
 
 COCOAPODS: 1.2.0.beta.1
