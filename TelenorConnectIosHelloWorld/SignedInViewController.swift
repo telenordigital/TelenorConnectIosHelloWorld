@@ -19,7 +19,7 @@ class SignedInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("oauth2Module?.isAuthorized()=\(oauth2Module?.isAuthorized())")
+        print("oauth2Module?.isAuthorized()=\(String(describing: oauth2Module?.isAuthorized()))")
         
         // We can get information about the user from the SignInViewController…
         if let infoText = userInfo {
@@ -58,8 +58,8 @@ class SignedInViewController: UIViewController {
     @IBAction func signOut(_ sender: AnyObject) {
         print("Signing out…")
         oauth2Module?.revokeAccess(completionHandler: { (response: AnyObject?, error: NSError?) -> Void in
-            print("response=\(response)")
-            print("error=\(error)")
+            print("response=\(String(describing: response))")
+            print("error=\(String(describing: error))")
 
             self.dismiss(animated: true, completion: nil)
         })
