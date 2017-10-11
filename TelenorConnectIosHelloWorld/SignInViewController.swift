@@ -20,7 +20,8 @@ class SignInViewController: UIViewController {
         redirectUrl: "telenordigital-connectexample-ios://oauth2callback",
         useStaging: true,
         scopes: ["profile", "openid", "email"],
-        accountId: "telenor-connect-ios-hello-world")
+        accountId: "telenor-connect-ios-hello-world",
+        optionalParams: ["acr_values": "2", "ui_locales": "bn"])
     
     override func viewDidLoad() {
         super.viewDidLoad()

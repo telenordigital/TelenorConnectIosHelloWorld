@@ -3,7 +3,7 @@ PODS:
   - CryptoSwift (0.6.7)
   - JSONWebToken (2.0.2):
     - CryptoSwift (~> 0.6.1)
-  - TDConnectIosSdk (1.0.1):
+  - TDConnectIosSdk (1.0.2):
     - AeroGearHttp
     - JSONWebToken
 
@@ -15,8 +15,8 @@ SPEC CHECKSUMS:
   AeroGearHttp: 8c825d4563439f565196f52efe80e15f0055109a
   CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
   JSONWebToken: ca86f02eeb3d1f58ba5197ec2cd53c7de915ecc1
-  TDConnectIosSdk: 0a51ae863c5618e602d2deddcdd379b6a82876e6
+  TDConnectIosSdk: c15660d62786194a6d8d7898d22df2df466b52ed
 
 PODFILE CHECKSUM: e06f08049b8c759036ad6ba52f6c695f35cc1e08
 
-COCOAPODS: 1.2.0.beta.3
+COCOAPODS: 1.3.1

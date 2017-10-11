@@ -45,14 +45,14 @@ class SignedInViewController: UIViewController {
             return
         }
         
-        http.request(method: .get, path: userInfoEndpoint, completionHandler: { (response: AnyObject?, error: NSError?) -> Void in
+        http.request(method: .get, path: userInfoEndpoint, completionHandler: { (response, error) in
             if let error = error {
                 print("Got error when fetching userinfo. error=\(error)")
                 return
             }
             
             self.signedInInfo.text = String(describing: response)
-        } as! CompletionBlock)
+        })
     }
     
     @IBAction func signOut(_ sender: AnyObject) {
