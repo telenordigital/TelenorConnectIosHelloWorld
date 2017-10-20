@@ -134,7 +134,7 @@
 				TargetAttributes = {
 					5C6D56FD1C91B2FF001A564E = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = M4Q75B4WS4;
+						DevelopmentTeam = 9F2YCZK4J4;
 						LastSwiftMigration = 0900;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -375,6 +375,7 @@
 				CODE_SIGN_ENTITLEMENTS = TelenorConnectIosHelloWorld/TelenorConnectIosHelloWorld.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9F2YCZK4J4;
 				INFOPLIST_FILE = TelenorConnectIosHelloWorld/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -396,6 +397,7 @@
 				CODE_SIGN_ENTITLEMENTS = TelenorConnectIosHelloWorld/TelenorConnectIosHelloWorld.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9F2YCZK4J4;
 				INFOPLIST_FILE = TelenorConnectIosHelloWorld/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
