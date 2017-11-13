@@ -10,4 +10,3 @@ target 'TelenorConnectIosHelloWorld' do
   pod 'TDConnectIosSdk'
 
 end
-	

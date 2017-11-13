@@ -1,6 +1,0 @@
-framework module Pods_TelenorConnectIosHelloWorld {
-  umbrella header "Pods-TelenorConnectIosHelloWorld-umbrella.h"
-
-  export *
-  module * { export * }
-}
