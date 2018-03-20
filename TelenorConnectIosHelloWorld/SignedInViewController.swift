@@ -28,12 +28,11 @@ class SignedInViewController: UIViewController {
         }
         
         // The ID token payload…
-        do {
-            let idTokenPayload = try oauth2Module?.getIdTokenPayload()
-            signedInInfo.text = String(describing: idTokenPayload)
-            return
-        } catch {
-            print("Failed to getIdTokenPayload: \(error)")
+        let idTokenPayload = oauth2Module?.getIdTokenPayload()
+        if idTokenPayload != nil {
+            let sub = idTokenPayload!["sub"] as? String
+            signedInInfo.text = "User id: \(sub ?? "missing")"
+            return;
         }
         
         // Or the userInfoEndpoint.
