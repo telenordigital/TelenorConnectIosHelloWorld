@@ -28,7 +28,7 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         
         oauth2Module = AccountManager.getAccountBy(config: config) ?? AccountManager.addAccountWith(config: self.config, moduleClass: TelenorConnectOAuth2Module.self)
-        print("oauth2Module!.isAuthorized()=\(oauth2Module!.isAuthorized())")
+        print("oauth2Module!.oauth2Session.refreshToken != nil=\(oauth2Module!.oauth2Session.refreshToken != nil)")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -40,7 +40,7 @@ class SignInViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // Note: The method will be called after (Safari) WebView completes logging in the user
-        if oauth2Module!.isAuthorized() && !performingingSegue {
+        if oauth2Module!.oauth2Session.refreshToken != nil && !performingingSegue {
             performingingSegue = true
             self.performSegue(withIdentifier: "signedIn", sender: nil)
         }
@@ -52,7 +52,7 @@ class SignInViewController: UIViewController {
             return
         }
         
-        if oauth2Module.isAuthorized() {
+        if oauth2Module.oauth2Session.refreshToken != nil {
             self.performSegue(withIdentifier: "signedIn", sender: nil)
             return
         }

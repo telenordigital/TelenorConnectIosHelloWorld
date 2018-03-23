@@ -16,18 +16,12 @@ class SignedInViewController: UIViewController {
     
     var userInfo: AnyObject?
     var oauth2Module: OAuth2Module?
+    var http: Http?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("oauth2Module?.isAuthorized()=\(String(describing: oauth2Module?.isAuthorized()))")
         
-        // We can get information about the user from the SignInViewController…
-        if let infoText = userInfo {
-            signedInInfo.text = String(describing: infoText)
-            return
-        }
-        
-        // The ID token payload…
+        // We can get information about the user from The ID token payload…
         let idTokenPayload = oauth2Module?.getIdTokenPayload()
         if idTokenPayload != nil {
             let sub = idTokenPayload!["sub"] as? String
@@ -37,19 +31,29 @@ class SignedInViewController: UIViewController {
         
         // Or the userInfoEndpoint.
         signedInInfo.text = "Fetching user info…"
-        let http = Http()
-        http.authzModule = oauth2Module
-        guard let userInfoEndpoint = self.oauth2Module?.config.userInfoEndpoint else {
-            self.signedInInfo.text = "Couldn't load userinfo"
+        http = Http()
+        http!.authzModule = oauth2Module
+        
+        if !oauth2Module!.isAuthorized() {
+            oauth2Module?.refreshAccessToken(completionHandler: { (accessToken, error) in
+                guard error == nil else {
+                    print("Got error when refreshing: \(String(describing: error))")
+                    return
+                }
+                self.getUserInfoAndSetText()
+            })
             return
         }
         
-        http.request(method: .get, path: userInfoEndpoint, completionHandler: { (response, error) in
+        getUserInfoAndSetText()
+    }
+    
+    func getUserInfoAndSetText() -> Void {
+        http?.request(method: .get, path: self.oauth2Module!.config.userInfoEndpoint!, completionHandler: { (response, error) in
             if let error = error {
                 print("Got error when fetching userinfo. error=\(error)")
                 return
             }
-            
             self.signedInInfo.text = String(describing: response)
         })
     }
