@@ -14,7 +14,7 @@ import TDConnectIosSdk
 class SignInViewController: UIViewController {
     
     var hasAppeared = false
-    var performingingSegue = false
+    var performingSegue = false
     var oauth2Module: OAuth2Module?
     let config = TelenorConnectConfig(clientId: "telenordigital-connectexample-ios",
         redirectUrl: "telenordigital-connectexample-ios://oauth2callback",
@@ -28,20 +28,20 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         
         oauth2Module = AccountManager.getAccountBy(config: config) ?? AccountManager.addAccountWith(config: self.config, moduleClass: TelenorConnectOAuth2Module.self)
-        print("oauth2Module!.isAuthorized()=\(oauth2Module!.isAuthorized())")
+        print("oauth2Module!.oauth2Session.accessToken != nil=\(oauth2Module!.oauth2Session.accessToken != nil)")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         hasAppeared = false
-        performingingSegue = false
+        performingSegue = false
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // Note: The method will be called after (Safari) WebView completes logging in the user
-        if oauth2Module!.isAuthorized() && !performingingSegue {
-            performingingSegue = true
+        if oauth2Module!.oauth2Session.refreshToken != nil && !performingingSegue {
+            performingSegue = true
             self.performSegue(withIdentifier: "signedIn", sender: nil)
         }
         hasAppeared = true
@@ -52,7 +52,7 @@ class SignInViewController: UIViewController {
             return
         }
         
-        if oauth2Module.isAuthorized() {
+        if oauth2Module.oauth2Session.accessToken != nil {
             self.performSegue(withIdentifier: "signedIn", sender: nil)
             return
         }
