@@ -10,6 +10,7 @@ import UIKit
 
 import AeroGearHttp
 import TDConnectIosSdk
+import LocalAuthentication
 
 class SignedInViewController: UIViewController {
     @IBOutlet weak var signedInInfo: UILabel!
@@ -21,16 +22,54 @@ class SignedInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let myContext = LAContext()
+        let myLocalizedReasonString = "These days you got to"
+        
+        var authError: NSError?
+        if #available(iOS 8.0, macOS 10.12.1, *) {
+            if myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
+                self.signedInInfo.text = "Waiting for biometric auth..."
+                myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString) { success, evaluateError in
+                    if success {
+                        // User authenticated successfully, take appropriate action
+                        print("success: \(success)")
+                        self.main()
+                    } else {
+                        // User did not authenticate successfully, look at error and take appropriate action
+                        print("evaluateError: \(evaluateError!)")
+                        
+                        DispatchQueue.main.async {
+                            self.signedInInfo.text = "Sorry, biometrics auth failed"
+                        }
+                    }
+                }
+            } else {
+                print("authError: \(authError!)")
+                // Could not evaluate policy; look at authError and present an appropriate message to user
+                self.signedInInfo.text = "Sorry, biometrics auth could not be done"
+            }
+        } else {
+            // Fallback on earlier versions
+            print("You're device is too old")
+            // TODO use .deviceOwnerAuthentication instead
+        }
+    }
+    
+    func main() -> Void {
         // We can get information about the user from The ID token payload…
         let idTokenPayload = oauth2Module?.getIdTokenPayload()
         if idTokenPayload != nil {
             let sub = idTokenPayload!["sub"] as? String
-            signedInInfo.text = "User id: \(sub ?? "missing")"
+            DispatchQueue.main.async {
+                self.signedInInfo.text = "User id: \(sub ?? "missing")"
+            }
             return;
         }
         
         // Or the userInfoEndpoint.
-        signedInInfo.text = "Fetching user info…"
+        DispatchQueue.main.async {
+            self.signedInInfo.text = "Fetching user info…"
+        }
         http = Http()
         http!.authzModule = oauth2Module
         
@@ -54,7 +93,9 @@ class SignedInViewController: UIViewController {
                 print("Got error when fetching userinfo. error=\(error)")
                 return
             }
-            self.signedInInfo.text = String(describing: response)
+            DispatchQueue.main.async {
+                self.signedInInfo.text = String(describing: response)
+            }
         })
     }
     
