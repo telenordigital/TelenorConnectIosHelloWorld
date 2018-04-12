@@ -40,7 +40,7 @@ class SignInViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // Note: The method will be called after (Safari) WebView completes logging in the user
-        if oauth2Module!.oauth2Session.refreshToken != nil && !performingingSegue {
+        if oauth2Module!.oauth2Session.refreshToken != nil && !performingSegue {
             performingSegue = true
             self.performSegue(withIdentifier: "signedIn", sender: nil)
         }
@@ -64,8 +64,8 @@ class SignInViewController: UIViewController {
             }
             
             print("accessToken=\(accessToken)")
-            if self.hasAppeared && !self.performingingSegue {
-                self.performingingSegue = true
+            if self.hasAppeared && !self.performingSegue {
+                self.performingSegue = true
                 self.performSegue(withIdentifier: "signedIn", sender: nil)
             }
         }
