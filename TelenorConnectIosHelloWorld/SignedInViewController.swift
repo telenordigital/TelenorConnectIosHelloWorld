@@ -20,6 +20,7 @@ class SignedInViewController: UIViewController {
     var http: Http?
     var lastBioAuthStarted: Date?
     var enteredBackground: Date?
+    var bioAuthCompleted: Date?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,13 +47,14 @@ class SignedInViewController: UIViewController {
     
     @objc func applicationDidBecomeActive(notification: NSNotification?) {
         let calendar = Calendar.current
-        let oneMinuteIntoPast = calendar.date(byAdding: .minute, value: -1, to: Date())!
-        let authenticatedMoreThanAMinuteAgo = lastBioAuthStarted == nil || lastBioAuthStarted! < oneMinuteIntoPast
-        guard authenticatedMoreThanAMinuteAgo else {
+        let _10secondsAgo = calendar.date(byAdding: .second, value: -10, to: Date())!
+        guard bioAuthCompleted == nil || bioAuthCompleted! < _10secondsAgo else {
             return
         }
-        let appWentIntoBackgroundMoreThanAMinuteAgo = enteredBackground == nil || enteredBackground! < oneMinuteIntoPast
-        guard appWentIntoBackgroundMoreThanAMinuteAgo else {
+        guard lastBioAuthStarted == nil || lastBioAuthStarted! < _10secondsAgo else {
+            return
+        }
+        guard enteredBackground == nil || enteredBackground! < _10secondsAgo else {
             return
         }
         
@@ -69,6 +71,7 @@ class SignedInViewController: UIViewController {
             if myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
                 self.signedInInfo.text = "Waiting for biometric auth..."
                 myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString) { success, evaluateError in
+                    self.bioAuthCompleted = Date()
                     if success {
                         // User authenticated successfully, take appropriate action
                         print("success: \(success)")
