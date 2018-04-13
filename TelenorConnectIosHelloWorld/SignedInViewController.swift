@@ -18,10 +18,29 @@ class SignedInViewController: UIViewController {
     var userInfo: AnyObject?
     var oauth2Module: OAuth2Module?
     var http: Http?
+    var lastBioAuthStarted: Date?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(applicationDidBecomeActive(notification:)),
+            name: NSNotification.Name.UIApplicationDidBecomeActive,
+            object: nil)
+    }
+    
+    @objc func applicationDidBecomeActive(notification: NSNotification) {
+        let calendar = Calendar.current
+        let oneMinuteIntoPast = calendar.date(byAdding: .minute, value: -1, to: Date())
+        guard lastBioAuthStarted == nil || lastBioAuthStarted! < oneMinuteIntoPast! else {
+            return
+        }
+        lastBioAuthStarted = Date()
+        biometricAuthenticateUser()
+    }
+    
+    func biometricAuthenticateUser() {
         let myContext = LAContext()
         let myLocalizedReasonString = "These days you got to"
         
