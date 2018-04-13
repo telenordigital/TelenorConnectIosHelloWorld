@@ -19,6 +19,7 @@ class SignedInViewController: UIViewController {
     var oauth2Module: OAuth2Module?
     var http: Http?
     var lastBioAuthStarted: Date?
+    var enteredBackground: Date?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,21 +29,40 @@ class SignedInViewController: UIViewController {
             selector: #selector(applicationDidBecomeActive(notification:)),
             name: NSNotification.Name.UIApplicationDidBecomeActive,
             object: nil)
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(applicationDidEnterBackground(notification:)),
+            name: NSNotification.Name.UIApplicationDidEnterBackground,
+            object: nil)
+        
+        applicationDidBecomeActive(notification: nil)
     }
     
-    @objc func applicationDidBecomeActive(notification: NSNotification) {
+    @objc func applicationDidEnterBackground(notification: NSNotification?) {
+        enteredBackground = Date()
+        print("enteredBackground!: \(enteredBackground!)")
+    }
+    
+    @objc func applicationDidBecomeActive(notification: NSNotification?) {
         let calendar = Calendar.current
-        let oneMinuteIntoPast = calendar.date(byAdding: .minute, value: -1, to: Date())
-        guard lastBioAuthStarted == nil || lastBioAuthStarted! < oneMinuteIntoPast! else {
+        let oneMinuteIntoPast = calendar.date(byAdding: .minute, value: -1, to: Date())!
+        let authenticatedMoreThanAMinuteAgo = lastBioAuthStarted == nil || lastBioAuthStarted! < oneMinuteIntoPast
+        guard authenticatedMoreThanAMinuteAgo else {
             return
         }
+        let appWentIntoBackgroundMoreThanAMinuteAgo = enteredBackground == nil || enteredBackground! < oneMinuteIntoPast
+        guard appWentIntoBackgroundMoreThanAMinuteAgo else {
+            return
+        }
+        
         lastBioAuthStarted = Date()
         biometricAuthenticateUser()
     }
     
     func biometricAuthenticateUser() {
         let myContext = LAContext()
-        let myLocalizedReasonString = "These days you got to"
+        let myLocalizedReasonString = "Please authenticate to prove you are the device owner"
         
         var authError: NSError?
         if #available(iOS 8.0, macOS 10.12.1, *) {
