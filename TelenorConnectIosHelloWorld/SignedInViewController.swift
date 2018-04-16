@@ -67,33 +67,29 @@ class SignedInViewController: UIViewController {
         let myLocalizedReasonString = "Please authenticate to prove you are the device owner"
         
         var authError: NSError?
-        if #available(iOS 8.0, macOS 10.12.1, *) {
-            if myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
-                self.signedInInfo.text = "Waiting for biometric auth..."
-                myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString) { success, evaluateError in
-                    self.bioAuthCompleted = Date()
-                    if success {
-                        // User authenticated successfully, take appropriate action
-                        print("success: \(success)")
-                        self.main()
-                    } else {
-                        // User did not authenticate successfully, look at error and take appropriate action
-                        print("evaluateError: \(evaluateError!)")
-                        
-                        DispatchQueue.main.async {
-                            self.signedInInfo.text = "Sorry, biometrics auth failed"
-                        }
-                    }
+        guard myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) else {
+            print("authError: \(authError!)")
+            // Could not evaluate policy; look at authError and present an appropriate message to user
+            self.signedInInfo.text = "Sorry, biometrics auth could not be done"
+            return
+        }
+        
+        self.signedInInfo.text = "Waiting for biometric auth..."
+        myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString) { success, evaluateError in
+            self.bioAuthCompleted = Date()
+            guard success else {
+                // User did not authenticate successfully, look at error and take appropriate action
+                print("evaluateError: \(evaluateError!)")
+                
+                DispatchQueue.main.async {
+                    self.signedInInfo.text = "Sorry, biometrics auth failed"
                 }
-            } else {
-                print("authError: \(authError!)")
-                // Could not evaluate policy; look at authError and present an appropriate message to user
-                self.signedInInfo.text = "Sorry, biometrics auth could not be done"
+                return
             }
-        } else {
-            // Fallback on earlier versions
-            print("You're device is too old")
-            // TODO use .deviceOwnerAuthentication instead
+            
+            // User authenticated successfully, take appropriate action
+            print("bioAuth success")
+            self.main()
         }
     }
     
