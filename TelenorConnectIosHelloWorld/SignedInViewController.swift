@@ -47,14 +47,14 @@ class SignedInViewController: UIViewController {
     
     @objc func applicationDidBecomeActive(notification: NSNotification?) {
         let calendar = Calendar.current
-        let _10secondsAgo = calendar.date(byAdding: .second, value: -10, to: Date())!
-        guard bioAuthCompleted == nil || bioAuthCompleted! < _10secondsAgo else {
+        let _5secondsAgo = calendar.date(byAdding: .second, value: -5, to: Date())!
+        guard bioAuthCompleted == nil || bioAuthCompleted! < _5secondsAgo else {
             return
         }
-        guard lastBioAuthStarted == nil || lastBioAuthStarted! < _10secondsAgo else {
+        guard lastBioAuthStarted == nil || lastBioAuthStarted! < _5secondsAgo else {
             return
         }
-        guard enteredBackground == nil || enteredBackground! < _10secondsAgo else {
+        guard enteredBackground == nil || enteredBackground! < _5secondsAgo else {
             return
         }
         
