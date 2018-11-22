@@ -7,6 +7,5 @@ target 'TelenorConnectIosHelloWorld' do
 
   # Pods for TelenorConnectIosHelloWorld
   pod 'AeroGearHttp'
-  pod 'TDConnectIosSdk'
-
+  pod 'TDConnectIosSdk', :git => "https://github.com/telenordigital/connect-ios-sdk", :branch => "biometrics"
 end

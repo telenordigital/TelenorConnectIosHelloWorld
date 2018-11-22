@@ -10,7 +10,6 @@
 		5C6D57021C91B2FF001A564E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D57011C91B2FF001A564E /* AppDelegate.swift */; };
 		5C6D57041C91B2FF001A564E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D57031C91B2FF001A564E /* SignInViewController.swift */; };
 		5C6D57071C91B2FF001A564E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D57051C91B2FF001A564E /* Main.storyboard */; };
-		5C6D57091C91B2FF001A564E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D57081C91B2FF001A564E /* Assets.xcassets */; };
 		5C6D570C1C91B2FF001A564E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D570A1C91B2FF001A564E /* LaunchScreen.storyboard */; };
 		5C6D57141C92E896001A564E /* SignedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D57131C92E896001A564E /* SignedInViewController.swift */; };
 		E75703217DD52B571AFBB810 /* Pods_TelenorConnectIosHelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D809B7315DF15820086C1AF3 /* Pods_TelenorConnectIosHelloWorld.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -22,7 +21,6 @@
 		5C6D57011C91B2FF001A564E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C6D57031C91B2FF001A564E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5C6D57061C91B2FF001A564E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5C6D57081C91B2FF001A564E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C6D570B1C91B2FF001A564E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C6D570D1C91B2FF001A564E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C6D57131C92E896001A564E /* SignedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedInViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 				5C6D57031C91B2FF001A564E /* SignInViewController.swift */,
 				5C6D57131C92E896001A564E /* SignedInViewController.swift */,
 				5C6D57051C91B2FF001A564E /* Main.storyboard */,
-				5C6D57081C91B2FF001A564E /* Assets.xcassets */,
 				5C6D570A1C91B2FF001A564E /* LaunchScreen.storyboard */,
 				5C6D570D1C91B2FF001A564E /* Info.plist */,
 			);
@@ -111,7 +108,6 @@
 				5C6D56FB1C91B2FF001A564E /* Frameworks */,
 				5C6D56FC1C91B2FF001A564E /* Resources */,
 				81CB15ACDC14B93A44D69388 /* [CP] Embed Pods Frameworks */,
-				D4F5D52FA2601225B9AC1524 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,8 +130,9 @@
 				TargetAttributes = {
 					5C6D56FD1C91B2FF001A564E = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 9F2YCZK4J4;
+						DevelopmentTeam = 6SPN6HFCKQ;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -168,7 +165,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C6D570C1C91B2FF001A564E /* LaunchScreen.storyboard in Resources */,
-				5C6D57091C91B2FF001A564E /* Assets.xcassets in Resources */,
 				5C6D57071C91B2FF001A564E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,21 +210,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D4F5D52FA2601225B9AC1524 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -374,13 +355,15 @@
 				CODE_SIGN_ENTITLEMENTS = TelenorConnectIosHelloWorld/TelenorConnectIosHelloWorld.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9F2YCZK4J4;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6SPN6HFCKQ;
 				INFOPLIST_FILE = TelenorConnectIosHelloWorld/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.telenor.connect.TelenorConnectIosHelloWorld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.telenor.connect.TelenorConnectIosHelloWorld2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -395,13 +378,15 @@
 				CODE_SIGN_ENTITLEMENTS = TelenorConnectIosHelloWorld/TelenorConnectIosHelloWorld.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9F2YCZK4J4;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6SPN6HFCKQ;
 				INFOPLIST_FILE = TelenorConnectIosHelloWorld/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.telenor.connect.TelenorConnectIosHelloWorld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.telenor.connect.TelenorConnectIosHelloWorld2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

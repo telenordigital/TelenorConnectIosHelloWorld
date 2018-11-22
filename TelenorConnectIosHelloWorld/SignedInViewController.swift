@@ -10,7 +10,6 @@ import UIKit
 
 import AeroGearHttp
 import TDConnectIosSdk
-import LocalAuthentication
 
 class SignedInViewController: UIViewController {
     @IBOutlet weak var signedInInfo: UILabel!
@@ -42,56 +41,19 @@ class SignedInViewController: UIViewController {
     
     @objc func applicationDidEnterBackground(notification: NSNotification?) {
         enteredBackground = Date()
-        print("enteredBackground!: \(enteredBackground!)")
     }
     
     @objc func applicationDidBecomeActive(notification: NSNotification?) {
-        let calendar = Calendar.current
-        let _5secondsAgo = calendar.date(byAdding: .second, value: -5, to: Date())!
-        guard bioAuthCompleted == nil || bioAuthCompleted! < _5secondsAgo else {
+        let timedelta = abs(Double(enteredBackground?.timeIntervalSinceNow ?? 0))
+        guard enteredBackground == nil || timedelta < 5 else {
+            self.dismiss(animated: true, completion: nil)
+            print("Sent back to front page because the app had been closed for \(timedelta) seconds")
             return
         }
-        guard lastBioAuthStarted == nil || lastBioAuthStarted! < _5secondsAgo else {
-            return
-        }
-        guard enteredBackground == nil || enteredBackground! < _5secondsAgo else {
-            return
-        }
+        main()
         
-        lastBioAuthStarted = Date()
-        biometricAuthenticateUser()
     }
     
-    func biometricAuthenticateUser() {
-        let myContext = LAContext()
-        let myLocalizedReasonString = "Please authenticate to prove you are the device owner"
-        
-        var authError: NSError?
-        guard myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) else {
-            print("authError: \(authError!)")
-            // Could not evaluate policy; look at authError and present an appropriate message to user
-            self.signedInInfo.text = "Sorry, biometrics auth could not be done"
-            return
-        }
-        
-        self.signedInInfo.text = "Waiting for biometric auth..."
-        myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString) { success, evaluateError in
-            self.bioAuthCompleted = Date()
-            guard success else {
-                // User did not authenticate successfully, look at error and take appropriate action
-                print("evaluateError: \(evaluateError!)")
-                
-                DispatchQueue.main.async {
-                    self.signedInInfo.text = "Sorry, biometrics auth failed"
-                }
-                return
-            }
-            
-            // User authenticated successfully, take appropriate action
-            print("bioAuth success")
-            self.main()
-        }
-    }
     
     func main() -> Void {
         // We can get information about the user from The ID token payload…
