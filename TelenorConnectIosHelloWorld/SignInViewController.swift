@@ -21,7 +21,7 @@ class SignInViewController: UIViewController {
         useStaging: true,
         scopes: ["profile", "openid", "email"],
         accountId: "telenor-connect-ios-hello-world",
-        webView: true,
+        webView: false,
         useBiometrics: true,
         optionalParams: ["ui_locales": "no"]
         )
