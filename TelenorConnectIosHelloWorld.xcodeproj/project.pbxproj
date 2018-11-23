@@ -28,6 +28,8 @@
 		7296F44B3C2C4940BF20C6E5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC7D3D2AAB6AFC0FDD54AF5 /* Pods-TelenorConnectIosHelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelenorConnectIosHelloWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		C57F6B2AC602F212C6535778 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D04A0A5A21A814DF004F1A50 /* nb-NO */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "nb-NO"; path = "nb-NO.lproj/Main.strings"; sourceTree = "<group>"; };
+		D04A0A5B21A814DF004F1A50 /* nb-NO */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "nb-NO"; path = "nb-NO.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D78EFA42E7A2B22B2776C047 /* Pods-TelenorConnectIosHelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelenorConnectIosHelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		D809B7315DF15820086C1AF3 /* Pods_TelenorConnectIosHelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelenorConnectIosHelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -232,6 +234,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5C6D57061C91B2FF001A564E /* Base */,
+				D04A0A5A21A814DF004F1A50 /* nb-NO */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5C6D570B1C91B2FF001A564E /* Base */,
+				D04A0A5B21A814DF004F1A50 /* nb-NO */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -251,6 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -304,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

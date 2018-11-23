@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Sign in with Telenor Connect"; ObjectID = "0Mh-XY-VNx"; */
+"0Mh-XY-VNx.normalTitle" = "Sign in with Telenor Connect";
+
+/* Class = "UIButton"; normalTitle = "Sign out"; ObjectID = "e09-hk-2KD"; */
+"e09-hk-2KD.normalTitle" = "Sign out";
+
+/* Class = "UILabel"; text = "Signed in user"; ObjectID = "kV1-nV-I9i"; */
+"kV1-nV-I9i.text" = "Signed in user";
