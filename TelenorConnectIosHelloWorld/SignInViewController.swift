@@ -21,7 +21,7 @@ class SignInViewController: UIViewController {
         useStaging: true,
         scopes: ["profile", "openid", "email"],
         accountId: "telenor-connect-ios-hello-world",
-        webView: false,
+        webView: true,
         useBiometrics: true,
         optionalParams: ["ui_locales": "no"]
         )
@@ -37,13 +37,13 @@ class SignInViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         guard oauth2Module?.oauth2Session.accessToken == nil else {
-            let supportedBiometrics = oauth2Module?.getAvailableBiometrics() ?? BiometricTypes.none
+            let supportedBiometrics = oauth2Module?.getAvailableBiometrics() ?? BiometricType.none
             var buttonText = "Sign in with "
             print("supported biometrics: " + supportedBiometrics.rawValue)
             switch supportedBiometrics{
-            case BiometricTypes.face_id:
+            case BiometricType.faceID:
                 buttonText += "face id"
-            case BiometricTypes.touch_id:
+            case BiometricType.touchID:
                 buttonText += "touch id"
             default:
                 buttonText += "Telenor Connect"
@@ -66,14 +66,14 @@ class SignInViewController: UIViewController {
             return
         }
         
-        oauth2Module.authenticate(viewController: self, oauth2Module: oauth2Module) { (error:Error?) in
+        oauth2Module.requestAccess(completionHandler: { (accessToken: AnyObject?, error: Error?) in
             if(error != nil){
                 print("unable to login \(error)")
                 return
             }
+            print("Access token was \(accessToken)")
             self.performSegue(withIdentifier: "signedIn", sender: nil)
-        }
-
+        }, useBiometrics:true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
