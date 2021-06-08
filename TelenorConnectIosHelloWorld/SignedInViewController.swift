@@ -20,7 +20,7 @@ class SignedInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("Signed in view controller did load");
         // We can get information about the user from The ID token payload…
         let idTokenPayload = oauth2Module?.getIdTokenPayload()
         if idTokenPayload != nil {
@@ -28,12 +28,17 @@ class SignedInViewController: UIViewController {
             signedInInfo.text = "User id: \(sub ?? "missing")"
             return;
         }
-        
+        print("-------------------------");
+        print(idTokenPayload);
         // Or the userInfoEndpoint.
         signedInInfo.text = "Fetching user info…"
         http = Http()
         http!.authzModule = oauth2Module
-        
+        print(oauth2Module!.oauth2Session.accessToken);
+        print(oauth2Module!.oauth2Session.refreshToken);
+        print(oauth2Module!.oauth2Session.idToken);
+        print("-------------------------");
+
         if !oauth2Module!.isAuthorized() {
             oauth2Module?.refreshAccessToken(completionHandler: { (accessToken, error) in
                 guard error == nil else {
