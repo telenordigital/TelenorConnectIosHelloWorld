@@ -7,6 +7,7 @@ target 'TelenorConnectIosHelloWorld' do
 
   # Pods for TelenorConnectIosHelloWorld
   pod 'AeroGearHttp'
-  pod 'TDConnectIosSdk'
+  #pod 'TDConnectIosSdk', :path => "path to local version"
+  pod 'TDConnectIosSdk', :git => "https://github.com/telenordigital/connect-ios-sdk.git"
 
 end

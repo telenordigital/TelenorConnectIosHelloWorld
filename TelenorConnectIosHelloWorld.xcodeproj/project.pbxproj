@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4919EFDD2355E1BA001F6177 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4919EFDC2355E1BA001F6177 /* PopUpViewController.swift */; };
+		49237B2B2359EC62005C8F4E /* Telenor-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49237B282359EC61005C8F4E /* Telenor-Light.otf */; };
+		49237B2C2359EC62005C8F4E /* Telenor-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49237B292359EC61005C8F4E /* Telenor-Bold.otf */; };
+		49237B2D2359EC62005C8F4E /* Telenor.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49237B2A2359EC62005C8F4E /* Telenor.otf */; };
 		5C6D57021C91B2FF001A564E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D57011C91B2FF001A564E /* AppDelegate.swift */; };
 		5C6D57041C91B2FF001A564E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D57031C91B2FF001A564E /* SignInViewController.swift */; };
 		5C6D57071C91B2FF001A564E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D57051C91B2FF001A564E /* Main.storyboard */; };
@@ -17,6 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4919EFDC2355E1BA001F6177 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		49237B282359EC61005C8F4E /* Telenor-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Telenor-Light.otf"; sourceTree = "<group>"; };
+		49237B292359EC61005C8F4E /* Telenor-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Telenor-Bold.otf"; sourceTree = "<group>"; };
+		49237B2A2359EC62005C8F4E /* Telenor.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Telenor.otf; sourceTree = "<group>"; };
+		493D320525C30EC1008E8B14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		493D320625C30EC1008E8B14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		493D320825C30EE3008E8B14 /* nb-NO */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "nb-NO"; path = "nb-NO.lproj/Main.strings"; sourceTree = "<group>"; };
+		493D320925C30EE3008E8B14 /* nb-NO */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "nb-NO"; path = "nb-NO.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		5C5B85631D78898200194FD2 /* TelenorConnectIosHelloWorld.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TelenorConnectIosHelloWorld.entitlements; sourceTree = "<group>"; };
 		5C6D56FE1C91B2FF001A564E /* TelenorConnectIosHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelenorConnectIosHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6D57011C91B2FF001A564E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +79,9 @@
 		5C6D57001C91B2FF001A564E /* TelenorConnectIosHelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				49237B292359EC61005C8F4E /* Telenor-Bold.otf */,
+				49237B282359EC61005C8F4E /* Telenor-Light.otf */,
+				49237B2A2359EC62005C8F4E /* Telenor.otf */,
 				5C5B85631D78898200194FD2 /* TelenorConnectIosHelloWorld.entitlements */,
 				5C6D57011C91B2FF001A564E /* AppDelegate.swift */,
 				5C6D57031C91B2FF001A564E /* SignInViewController.swift */,
@@ -75,6 +90,7 @@
 				5C6D57081C91B2FF001A564E /* Assets.xcassets */,
 				5C6D570A1C91B2FF001A564E /* LaunchScreen.storyboard */,
 				5C6D570D1C91B2FF001A564E /* Info.plist */,
+				4919EFDC2355E1BA001F6177 /* PopUpViewController.swift */,
 			);
 			path = TelenorConnectIosHelloWorld;
 			sourceTree = "<group>";
@@ -111,7 +127,6 @@
 				5C6D56FB1C91B2FF001A564E /* Frameworks */,
 				5C6D56FC1C91B2FF001A564E /* Resources */,
 				81CB15ACDC14B93A44D69388 /* [CP] Embed Pods Frameworks */,
-				D4F5D52FA2601225B9AC1524 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,7 +149,7 @@
 				TargetAttributes = {
 					5C6D56FD1C91B2FF001A564E = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 9F2YCZK4J4;
+						DevelopmentTeam = 62T9J75KZT;
 						LastSwiftMigration = 0900;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -149,8 +164,10 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				English,
 				Base,
+				en,
+				"nb-NO",
 			);
 			mainGroup = 5C6D56F51C91B2FF001A564E;
 			productRefGroup = 5C6D56FF1C91B2FF001A564E /* Products */;
@@ -167,9 +184,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49237B2C2359EC62005C8F4E /* Telenor-Bold.otf in Resources */,
+				49237B2D2359EC62005C8F4E /* Telenor.otf in Resources */,
 				5C6D570C1C91B2FF001A564E /* LaunchScreen.storyboard in Resources */,
 				5C6D57091C91B2FF001A564E /* Assets.xcassets in Resources */,
 				5C6D57071C91B2FF001A564E /* Main.storyboard in Resources */,
+				49237B2B2359EC62005C8F4E /* Telenor-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +202,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AeroGearHttp/AeroGearHttp.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONWebToken/JWT.framework",
 				"${BUILT_PRODUCTS_DIR}/TDConnectIosSdk/TDConnectIosSdk.framework",
@@ -195,7 +215,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C3418C5607863478893A0D00 /* [CP] Check Pods Manifest.lock */ = {
@@ -216,21 +236,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D4F5D52FA2601225B9AC1524 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelenorConnectIosHelloWorld/Pods-TelenorConnectIosHelloWorld-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -241,6 +246,7 @@
 				5C6D57041C91B2FF001A564E /* SignInViewController.swift in Sources */,
 				5C6D57141C92E896001A564E /* SignedInViewController.swift in Sources */,
 				5C6D57021C91B2FF001A564E /* AppDelegate.swift in Sources */,
+				4919EFDD2355E1BA001F6177 /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +257,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				5C6D57061C91B2FF001A564E /* Base */,
+				493D320525C30EC1008E8B14 /* en */,
+				493D320825C30EE3008E8B14 /* nb-NO */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -259,6 +267,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				5C6D570B1C91B2FF001A564E /* Base */,
+				493D320625C30EC1008E8B14 /* en */,
+				493D320925C30EE3008E8B14 /* nb-NO */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -270,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -323,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -374,11 +386,11 @@
 				CODE_SIGN_ENTITLEMENTS = TelenorConnectIosHelloWorld/TelenorConnectIosHelloWorld.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9F2YCZK4J4;
+				DEVELOPMENT_TEAM = 62T9J75KZT;
 				INFOPLIST_FILE = TelenorConnectIosHelloWorld/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.telenor.connect.TelenorConnectIosHelloWorld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.telenor.connect.TelenorConnectIosHelloWorldExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -395,11 +407,11 @@
 				CODE_SIGN_ENTITLEMENTS = TelenorConnectIosHelloWorld/TelenorConnectIosHelloWorld.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9F2YCZK4J4;
+				DEVELOPMENT_TEAM = 62T9J75KZT;
 				INFOPLIST_FILE = TelenorConnectIosHelloWorld/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.telenor.connect.TelenorConnectIosHelloWorld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.telenor.connect.TelenorConnectIosHelloWorldExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
